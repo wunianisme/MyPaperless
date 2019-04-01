@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SMTReflowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <!-- SMT回焊爐參數表 -->
+    <!-- ZONE1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone1" />
+
+            <TextView
+                android:id="@+id/tvZone1"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone1"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE2 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone2" />
+
+            <TextView
+                android:id="@+id/tvZone2"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone2"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE3 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone3" />
+
+            <TextView
+                android:id="@+id/tvZone3"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone3"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE4 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone4" />
+
+            <TextView
+                android:id="@+id/tvZone4"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone4"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE5 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone5" />
+
+            <TextView
+                android:id="@+id/tvZone5"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone5"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE6 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone6" />
+
+            <TextView
+                android:id="@+id/tvZone6"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone6"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE7 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone7" />
+
+            <TextView
+                android:id="@+id/tvZone7"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone7"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE8 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone8" />
+
+            <TextView
+                android:id="@+id/tvZone8"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone8"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE9 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone9" />
+
+            <TextView
+                android:id="@+id/tvZone9"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone9"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE10 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone10" />
+
+            <TextView
+                android:id="@+id/tvZone10"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone10"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE11 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone11" />
+
+            <TextView
+                android:id="@+id/tvZone11"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone11"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE12 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone12" />
+
+            <TextView
+                android:id="@+id/tvZone12"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone12"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ZONE13 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_zone13" />
+
+            <TextView
+                android:id="@+id/tvZone13"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etZone13"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- SPEED -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_speed" />
+
+            <TextView
+                android:id="@+id/tvSpeed"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etSpeed"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- FanSpeed -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_fanspeed" />
+
+            <TextView
+                android:id="@+id/tvFanSpeed"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etFanSpeed"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- ShuntValue -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_shuntvalue" />
+
+            <TextView
+                android:id="@+id/tvShuntValue"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etShuntValue"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.NA"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

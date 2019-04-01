@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--首頁單選按鈕文本顏色  -->
+	<item android:state_checked="true" android:color="@color/green"/>
+	<item android:state_checked="false" android:color="@color/gray_hint"/>
+</selector>

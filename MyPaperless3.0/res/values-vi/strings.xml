@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Paperless 3.0</string>
+    <string name="action_settings">Settings</string>
+    <!-- dialog -->
+    <string name="system_tip">Notification</string>
+    <string name="btn_ok">Xác nhận</string>
+    <string name="btn_no">Hủy</string>
+    <string name="cancel_tip">Hủy Tip</string>
+    <string name="cancel_message">Bạn xác nhận muốn thoát khỏi trang trước?</string>
+    <string name="connect_overtime">Kết nối thời hạn, xin hãy thử lại lần nữa!</string>
+
+    <!-- APK版本更新 -->
+    <string name="APK_update"> APK phiên bản mới</string>
+    <string name="download_apk"> APK tải xuống </string>
+    <string name="APK_update_content"> Cập nhật nội dung: </string>
+    <string name="savepath"> Lưu lại đường dẫn! </string>
+    <string name="savedownload_success"> Bảo lưu thông tin tải xuống thành công </string>
+    <string name="btn_updateAPK"> Cập nhật </string>
+
+    <!-- 登陆 -->
+    <string name="account_hint"> Tài khoản </string>
+    <string name="pwd_hint">Mật khẩu</string>
+    <string name="forget_pwd">Quên mật khẩu?</string>
+    <string name="account_login">Đăng nhập</string>
+    <string name="language_chinese">Tiếng Trung</string>
+    <string name="language_english">Tiếng Anh</string>
+    <string name="logonname_empty">Tài khoản không được để trống!</string>
+    <string name="password_empty">Mật khẩu không được để trống！</string>
+    <string name="login_success">Đăng nhập thành công！</string>
+    <string name="logonname_notexist">Tài khoàn này không tồn tại!</string>
+    <string name="pwd_error_nolock">mật mã không đúng, số lần bạn còn có thể nhập sai là： </string>
+    <string name="pwd_error_islock">Tài khoản này đã bị khóa! 30p sau tự động mở khóa </string>
+    <string name="error_locked">Tài khoản này đã bị khóa!</string>
+    <string name="logonname_password_error">Tài khoản hoặc mật khẩu không đúng！</string>
+    <string name="connect_network_failed">Không thể kết nối hệ thống, hãy kiểm tra lại kết nối！</string>
+    <string name="network_exception">Kết nối mạng bất thường！\n</string>
+    <string name="loading">Loading...</string>
+    <string name="pwd_regular">Mật khẩu của bạn cần thay đổi\nMật khẩu định dạng：độ dài 8-16 ký tự，ít nhất 1 ký tự thường , in hoa , số và ký tự đặc biệt</string>
+    <string name="updatepwd_now">Thay đổi ngay</string>
+    <string name="copyright">©CNSBG SFC Dep. AppTeam</string>
+
+    <!-- 网络服务 -->
+    <string name="connectedto">Đã kết nối</string>
+    <string name="mobile_network">Mạng di động</string>
+    <string name="disconnect">Mất kết nối</string>
+
+    <!-- 修改密码 -->
+    <string name="updatepwd_title">Thay đổi tài khoản mật khẩu</string>
+    <string name="oldpwd_hint">Hãy nhập mật khẩu cũ</string>
+    <string name="newpwd_hint">8-16 ký tự mật khẩu mới</string>
+    <string name="confirmpwd_hint">Xác minh lại mật khẩu mới</string>
+    <string name="updatepwd">Thay đổi mật khẩu</string>
+    <string name="oldpwd_empty">Mật khẩu cũ không được để trống！</string>
+    <string name="newpwd_empty"> Mật khẩu mới không được để trống！</string>
+    <string name="confirmpwd_empty">Mật khẩu xác minh không được để trống！</string>
+    <string name="oldpwd_error">Mật khẩu cũ không đúng, hãy nhập lại！</string>
+    <string name="confirmpwd_identical"> Mật khẩu xác minh và mật khẩu mới không giống nhau！</string>
+    <string name="newpwd_illegal">Cài đặt mật khẩu mới không đúng định dạng, hãy nhập lại！</string>
+    <string name="updatepwd_failed">Thay đổi mật khẩu thất bại, hãy thử lại！</string>
+    <string name="updatepwd_success"> Thay đổi mật khẩu thành công！</string>
+
+    <!-- 忘記密碼 -->
+    <string name="forgetpwd_title">Quên mật khẩu</string>
+    <string name="loginname_hint">Hãy nhập tài khoản</string>
+    <string name="email_hint">Hãy nhập địa chỉ email</string>
+    <string name="getemail">Địa chỉ email nhận thư</string>
+    <string name="findpwd">Tìm lại mật khẩu</string>
+    <string name="loginname_notexist">Tài khoản này không tồn tại！</string>
+    <string name="email_empty">Địa chỉ email không được để trống！</string>
+    <string name="findpwd_success">Tìm lại mật khẩu thành công! Mật khẩu đã được gửi vào email của bạn!</string>
+    <string name="sendemail_failed"> Tìm lại mật khẩu thất bại！Hãy xác nhận đã nhập đúng địa chỉ email hay chưa?</string>
+    <string name="findpwd_failed"> Tìm lại mật khẩu thất bại！Hãy xác nhận tài khoản nhập đúng hay không?</string>
+
+    <!-- 主頁 -->
+    <string name="home_title">Trang chủ</string>
+    <string name="checkmanage_title">Thẩm định</string>
+    <string name="account_title">Account</string>
+    <string name="pressagain_exit">Click để rời APP</string>
+
+    <!-- 賬戶 -->
+    <string name="eg_logonname">ID：</string>
+    <string name="eg_name">Tên tài khoản？</string>
+    <string name="employeeinfo">Thông tin nhân viên</string>
+    <string name="pwdupdate">Thay đổi mật khẩu</string>
+    <string name="versionupdate">Cập nhật phiên bản</string>
+    <string name="feedback">Ý kiến phản hồi</string>
+    <string name="contactus">Contact us</string>
+    <string name="logoff">Thay đổi tài khoản</string>
+    <string name="gallery">Album</string>
+    <string name="camera">Chụp ảnh</string>
+    <string name="cancel">Hủy</string>
+    <string name="picture_notexist">Ảnh không tồn tại！</string>
+    <string name="uploadheadportrait_success">Cài đặt ảnh đại diện thành công！</string>
+    <string name="uploadheadportrait_failed"> Cài đặt ảnh đại diện thất bại！</string>
+    <string name="newversion">Phiên bản mới</string>
+    <string name="nonewversion">Phiên bản mới nhất</string>
+    <string name="versioncode">Mã phiên bản：</string>
+    <string name="versionname">Tên phiên bản：</string>
+    <string name="contactus_message">        SFC Dep. APPTeam\n
+                       Điện thoại：187781\n
+                       Email：supporter.team@mail.\nfoxconn.com               </string>
+    <string name="logoff_message">Bạn có muốn rời trang trước không？</string>
+
+    <!-- 圖片編輯 -->
+    <string name="turnleft">Trái</string>
+    <string name="turnright">Phải</string>
+    <string name="saveimage">Lưu</string>
+    <string name="canceledit">Hủy</string>
+
+    <!-- 賬號信息 -->
+    <string name="accountinfo_title">Thông tin tài khoản</string>
+    <string name="accountinfo_save">Lưu</string>
+    <string name="account_logonname">ID</string>
+    <string name="account_chinesename">Tên tiếng Trung</string>
+    <string name="account_englishname"> Tên tiếng Anh </string>
+    <string name="account_job">Chức vụ</string>
+    <string name="account_ext">Điện thoại</string>
+    <string name="account_email">Mail</string>
+    <string name="account_userlevel">Cấp độ người dùng</string>
+    <string name="account_master">Chủ quản ID</string>
+    <string name="account_team">Team</string>
+    <string name="account_section">Section</string>
+    <string name="account_SBU">SBU</string>
+    <string name="account_mfg">MFG</string>
+    <string name="account_BU">BU</string>
+    <string name="account_site">Site</string>
+    <string name="account_lasteditby">Người sửa đổi</string>
+    <string name="account_lasteditdt">Thời gian sửa đổi</string>
+    <string name="chinesename_empty">Tên tiếng Trung không được để trống！</string>
+    <string name="englishname_empty"> Tên tiếng Anh không được để trống！</string>
+    <string name="ext_empty">Điện thoại không được để trống！</string>
+    <string name="mail_empty">Mail không được để trống！</string>
+    <string name="chinesename_illegal"> Hãy nhập tên tiếng Trung băng tiếng trung！</string>
+    <string name="englishname_illegal"> Hãy nhập tên tiếng Anh băng tiếng Anh！</string>
+    <string name="ext_lengthnotenough">Độ dài số điện thoại ít nhất là 5！</string>
+    <string name="email_illegal">Địa chỉ email không đúng định dạng！</string>
+    <string name="saveaccountinfo_success">Lưu thông tin tài khoản thành công！</string>
+    <string name="saveaccountinfo_failed"> Lưu thông tin tài khoản thất bại！Hãy thử lại</string>
+
+    <!-- 員工信息 -->
+    <string name="addemployee">Add</string>
+    <string name="searchemployee_hint">Hãy nhập ID hoặc tên tài khoản</string>
+    <string name="column_logonname">ID</string>
+    <string name="column_name">Tên</string>
+    <string name="column_job">Chức vụ</string>
+    <string name="column_master">Chủ quản</string>
+    <string name="totalrownum">Số lượng record：</string>
+    <string name="getemployeeinfo_failed">Thu thập thông tin thất bại! Hãy thử lại</string>
+
+    <!-- 員工詳細信息 -->
+    <string name="employeedetail_title">Thông tin nhân viên </string>
+    <string name="userlevel_instruction">Mô tả cấp độ：0-Nhân viên bình thường，1-Tổ trưởng hoặc chuyền trưởng，2-Trưởng phòng trở lên</string>
+    <!-- 添加員工 -->
+    <string name="addemployee_title">Thêm nhân viên</string>
+    <string name="addemployee_submit">Submit</string>
+    <string name="logonname_hint">Hãy nhập ID, lớn hơn 5 ký tự</string>
+    <string name="chinesename_hint">Hãy nhập tên tiếng Trung，không quá 7 ký tự</string>
+    <string name="englishname_hint">Hãy nhập tên tiếng Anh，Không quá 20 ký tự</string>
+    <string name="ext_hint">Hãy nhập số điện thoại，lớn hơn 5 số</string>
+    <string name="emails_hint">Hãy nhập địa chỉ mail，không quá 50 ký tự</string>
+    <string name="userlevel_hint">Hãy nhập chủ quản ID，ít nhất 5 ký tự</string>
+    <string name="logonnames_empty">ID không được để trống！</string>
+    <string name="master_empty"> Chủ quản ID không được để trống！</string>
+    <string name="logonname_lengthnotenough">Độ dài ID ít nhất 5 ký tự！</string>
+    <string name="master_lengthnotenough"> Độ dài chủ quản ID ít nhất 5 ký tự！</string>
+    <string name="addemployee_success">Thêm nhân viên thành công！\nMật khẩu ban đầu là：</string>
+    <string name="employee_exist">Tài khoản nhân viên đã tồn tại!</string>
+    <string name="addemployee_failed"> Thêm nhân viên thất bại！Hãy thử lại</string>
+    <!-- 意見反饋 -->
+    <string name="publishfeedback_hint">Ý kiến</string>
+    <string name="publish">Đề xuất ý kiến</string>
+    <string name="getfeedback_failed"> Thu thập lịch sử ý kiến phản hồi thất bại! Hãy thử lại </string>
+    <string name="publish_empty">Nội dung ý kiến không được để trống！</string>
+    <string name="publish_success"> Đề xuất ý kiến thành công！</string>
+    <string name="publish_failed"> Đề xuất ý kiến thất bại！Hãy thử lại</string>
+
+    <!-- 點檢 -->
+    <string name="scan_tip"> Hãy điều chỉnh khung hình vào đúng vị trí QR code để Scan </string>
+    <string name="scanqr">Scan rà soát</string>
+    <string name="bureport_title"> Báo biểu đã áp dụng </string>
+    <string name="bu_notfound">Nhà xưởng chưa thiết lập BU</string>
+
+    <!-- 各BU已导入報表 -->
+    <string name="allreport">Báo biểu đã áp dụng</string>
+    <string name="reportnum">Mã báo biểu</string>
+    <string name="reportname">Tên báo biểu</string>
+    <string name="getreport_failed">BU tạm thời không có báo biểu</string>
+    <string name="totalreport_count">Tổng số thiết lập báo biểu：</string>
+
+    <!-- 掃碼點檢 -->
+    <string name="qrcode_notexist">Mã QR code không tồn tại！</string>
+    <string name="check_notpermission">Tạm thời không có quyền kiểm tra！</string>
+    <string name="report_checked">Mã QR code đã được kiểm tra！Người kiểm tra：</string>
+    <string name="select_checkreport">Lựa chọn báo biểu kiểm tra</string>
+
+    <!-- 報表點檢 -->
+    <string name="check_item">Hạng mục kiểm tra</string>
+    <string name="wo_hint">Hãy nhập công lệnh hoặc SN</string>
+    <string name="rno">Mã số：</string>
+    <string name="rno2">Mã kiểm tra</string> <!-- 不輸工單顯示編號 -->
+    <string name="floorname">Tầng：</string> <!-- 不輸工單顯示編號 -->
+    <string name="linename">Line：</string>
+    <string name="skuno">Model：</string>
+    <string name="skuversion">Version：</string>
+    <string name="checkid">Check ID：</string>
+    <string name="qty">Số lượng：</string>
+    <string name="side">Side：</string>
+    <string name="checkremark">Chú thích：</string>
+    <string name="deviation">deviation：</string>
+    <string name="deviation_hint">Hãy nhập vào deviation </string>
+    <string name="side_hint">請輸入面別</string>
+    <string name="checktype">Loại hình：</string>
+    <string name="reportchecktype">loại hình kiểm tra： </string>
+    <string name="maintencetime">Chọn thời gian </string>
+    <string name="getparams_success">Đưa ra tham số tiêu chuẩn</string>
+    <!-- checkFlag -->
+    <string name="inputkeyword_hint">Hãy nhập từ khóa</string>
+    <string name="inputtrsn_hint"> Hãy nhập TR_SN</string>
+    <string name="inputsn_hint">Hãy nhập SN</string>
+    <string name="checkcontent_hint">Hãy nhập nội dung rà soát</string>
+    <string name="inputok_hint">Hãy nhập OK</string>
+    <!-- 錯誤信息 -->
+    <string name="sn_error">Nhập SN sai！</string>
+    <string name="wo_error">Nhập công lệnh sai！</string>
+    <string name="report_notconfig">Báo biểu chưa thiết lập，liên lạc trưởng phòng tiến hành thiết lập！</string>
+    <string name="getshift_failed">Tra cứu ca và phiên làm việc thất bại！</string>
+    <string name="side_notsupport">Side không hỗ trợ！</string>
+    <string name="params_notsupport">ME chưa cung cấp tham số！</string>
+    <!-- 點檢提示信息 -->
+    <string name="check_tip">Nhắc nhở rà soát</string>
+    <string name="submitfailed_notconfig">Báo biểu chưa thiết lập，Hãy thiết lập trước khi đệ trình！</string>
+    <string name="submitfailed_inputwo">Hãy nhập công lệnh！</string>
+    <string name="submitfailed_wowrong">Hãy nhập đúng công lệnh！</string>
+    <string name="submitfailed_notgetparam">Chưa nhận được các thông số tiêu chuẩn，Không cho phép Đệ trình！</string>
+    <string name="submitfailed_deviationempty">Hãy nhập vào！</string>
+    <string name="submitfailed_sideempty">請輸入面別！</string>
+    <string name="deviationinput_title">nhập vào deviation</string>
+    <string name="sideinput_title">輸入side</string>
+    <string name="submitfailed_contentempty">Mục tham số thực tế không được để trống，Hãy nhập lại</string>
+    <string name="submitfailed_notinrange"> Mục tham số thực tế và tham số tiêu chuẩn không nằm trong SPEC，Hãy kiểm tra lại</string>
+    <string name="submitfailed_notmatch">Mục tham số thực tế và tiêu chuẩn không trùng khớp，Hãy nhập lại</string>
+    <string name="submitfailed_notnumber">Mục tham số thực tế không phải là số hoặc không đúng quy cách，Hãy nhập lại</string>
+    <string name="submitfailed_nottakephoto">Đã thiết lập chụp ảnh，Hãy chụp ảnh</string>
+    <string name="check_success">Rà soát thành công！</string>
+    <string name="input_onlyok">Hãy nhập OK！</string>
+    <string name="submitcheck_title">Đệ trình rà soát</string>
+    <string name="btn_submitcheck">Đệ trình</string>
+    <string name="submitcheck_success">Rà soát thành công！</string>
+    <string name="submitcheck_exist">Khoảng thời gian đã được rà soát！</string>
+    <string name="submitcheck_failed">Đệ trình thông tin rà soát thất bại！Hãy kiểm tra tình trạng kết nối hoặc thử lại sau</string>
+    <string name="openline">Mở chuyền</string>
+    <string name="changeline">Đổi chuyền</string>
+
+    <!-- 提交異常 選擇簽核人 -->
+    <string name="master_hint">Hãy nhập tên hoặc ID của người ký</string>
+    <string name="clickitem_selectcheckby">Chọn mục dưới để chọn người ký</string>
+    <string name="selected_checkby">Đã chọn người ký（Mặc định là chủ quản cao hơn）</string>
+    <string name="submitexception_title">Đệ trình bất thường</string>
+    <string name="btn_nextstep">Next</string>
+    <string name="checkby_add">Thêm</string>
+    <string name="checkby_delete">Xóa</string>
+    <string name="getcheckby_failed">Tạm thời không thể chọn người ký！</string>
+    <string name="checkby_notselect">Hãy chọn người ký！</string>
+    <!-- 提交異常  拍照 輸入內容 -->
+    <string name="exception_hint">Hãy nhập thông tin bất thường</string>
+    <string name="check_exception">Kiểm tra chuyền sản xuất có bất thường</string>
+    <string name="btn_submitexception">Đề trình bất thường</string>
+    <string name="exceptioninfo_empty">Hãy nhập thông tin bất thường trước khi đệ trình！</string>
+    <string name="photonum_toomore">Chỉ được upload nhiều nhất 3 bức ảnh！</string>
+    <string name="submitexception_success">Đệ trình thông tin bất thường thành công！</string>
+    <string name="submitexception_failed">Đệ trình thông tin bất thường thất bại！Hãy thử lại</string>
+    <string name="submitphoto_success">Upload hình ảnh bất thường thành công！</string>
+
+    <!-- 功能管理 -->
+	<string name="functionmanage_title"> Quản lý chức năng </string>
+    <string name="audit_search"> Tra cứu ký duyệt </string>
+    <string name="check_search"> Tra cứu trạng thái ký duyệt </string>
+    <string name="check_edit"> sửa chữa kiểm tra</string>
+    <string name="maintenance_inadvance"> Cài đặt trước</string>
+    <string name="report_config"> thông số Bảng biểu</string>
+    <string name="parameter_manage"> Quản lý tham số</string>
+    <string name="exception_manage"> Quản lý bất thường</string>
+    <string name="reportconfig_nopermission"> Bạn hiện không có quyền hạn thiết lậpbảng biểu ,hãy liên lạc chủ quản cấp trưởng phòng trở lên tiến hành thiết lập！</string>
+    <string name="maintenance_nopermission"> Bạn hiện không có quyền hạn cài đặt trước！ </string>
+    <!-- 簽核查詢 -->
+	<string name="record_query"> Ghi chép Lịch sử</string>
+    <string name="review_list">Danh sách đợi ký</string>
+    <string name="audited_list">Danh sách đã ký</string>
+    <string name="anti_sign_list">Danh sách trả về</string>
+    <string name="where_hint"> Hãy nhập vào văn kiện tra cứu </string>
+    <string name="please_enter_list">Nhập tên bảng biểu</string>
+    <string name="select_report"> Chọn bảng biểu</string>
+    <string name="getmfgreport_failed"> bảng biểu tạm thời không tra cứu được！</string>
+    <string name="getaudit_failed"> tạm thời không có thông tin ký bảng biểu！</string>
+    <string name="reportname_empty"> hãy nhập tên bảng biểu hoặc tạm thời không có thông tin bảng biểu này！</string>
+    <string name="queryrow"> Số lượng lịch sử tra cứu：</string>
+    <!-- 簽核基本信息 -->
+	<string name="baseinfo_title"> tông tin ký duyệt cơ bản</string>
+    <string name="seqno"> Trình tự</string>
+    <string name="check_number"> Mã kiểm tra </string>
+    <string name="andit_status"> Trạng thái ký duyệt</string>
+    <string name="creation_time"> Thời gian khởi tạo：</string>
+    <string name="by">BY:</string>
+    <string name="audit_ok"> Đã ký </string>
+    <string name="audit_wait"> Đợi ký</string>
+    <string name="audit_reject"> Từ chối ký</string>
+    <string name="record_node"> lịch sử chỉnh sửa </string>
+    <string name="auditor"> Người ký</string>
+    <string name="state"> Trạng thái</string>
+    <string name="report_name"> Tên bảng biểu：</string>
+    <string name="report_num"> Mã bảng biểu：</string>
+    <string name="business_office"> Đơn vị sự nghiệp：</string>
+    <string name="floor"> Tầng lầu：</string>
+    <string name="work_order"> Công lệnh：</string>
+    <string name="line_body"> Chuyền(thiết bị)：</string>
+    <string name="check_skuno"> Tên hàng：</string>
+    <string name="work_ordernumber"> Số lượng công lệnh：</string>
+    <string name="deviation_ecn">deviation\n(ecn)：</string>
+    <string name="face"> mặt nào：</string>
+    <string name="Reasons_fortagging"> Ghi chú lý do：</string>
+    <string name="check_marking"> Ghi chú kiểm tra：</string>
+    <string name="getcheck_information"> Thông tin chi tiết kiểm tra>>></string>
+    <string name="getbaseinfo_failed"> tạm thời không có thông tin cơ bản ký duyệt！</string>
+    <!-- 詳細點檢信息 -->
+	<string name="checkresult_title"> Thông tin chi tiết kiểm tra </string>
+    <string name="proid"> Hạng mục con ID </string>
+    <string name="inspection_project"> Hạng mục kiểm tra</string>
+    <string name="check_frequency"> Tần suất kiểm tra</string>
+    <string name="icar_no">Icar NO：</string>
+    <string name="check_result"> Kết quả kiểm tra</string>
+    <string name="tobe_audited"> đợi ký</string>
+    <string name="pass"> Thông qua</string>
+    <string name="audit_person"> Người ký：</string>
+    <string name="check_content"> Kiểm tra hạng mục con：</string>
+    <string name="check_status"> trạng thái kiểm tra：</string>
+    <string name="checkresult_normal"> Bình thường</string>
+    <string name="checkresult_exception"> Bất thường(Vào kiểm tra tại phần quản lý bất thường)</string>
+    <string name="check_record_content"> Nội dung ghi chép kiểm tra：</string>
+    <string name="upload_pic"> Upload hình ảnh：</string>
+    <string name="btn_pass"> Thông qua</string>
+    <string name="btn_reject"> Trả về</string>
+    <string name="checkdata_null"> tạm thời Không có thông số kiểm tra</string>
+    <string name="check_reportname"> bảng biểu kiểm tra：</string>
+    <string name="check_Id"> lịch sử chỉnh sửa： </string>
+    <string name="check_reason">Nguyên nhân：</string>
+    <string name="reject_remark"> Nguyên nhân từ chối ký： </string>
+    <string name="getrejectremark_failed"> Lấy nguyên nhân từ chối ký thất bại！</string>
+    <string name="audit_tip"> Nhắc nhở ký duyệt</string>
+    <string name="auditpass_msg"> Bạn chắc chắn thông qua thông tin gửi đi kiểm tra này không?</string>
+    <string name="auditreject_hint"> Hãy nhập nguyên nhân trả về </string>
+    <string name="remark_empty"> Hãy nhập nguyên nhân trả về ！</string>
+    <string name="submitaudit_success"> Ký duyệt thành công！ </string>
+    <string name="submitaudit_failed"> Ký duyệt thất bại Hãy làm lại </string>
+    <string name="zoomimage_tip"> Nhắc nhở: hai ngón tay ấn giữ vào hình ảnh mở rộng ra có thể phóng to vị trí đại cục </string>
+    <!-- 點檢狀況查詢 -->
+ 	<string name="floorNO_search"> Số thứ tự/ thông tin chi tiết </string>
+    <string name="sitLine_search"> Chuyền/ người phụ trách </string>
+    <string name="prompting_search"> Nhắc nhở: Bối cảnh đã kiểm tra là màu trắng, chưa kiểm tra là màu đỏ </string>
+    <string name="select_search">Tra cứu </string>
+    <string name="date">ngày tháng</string>
+    <string name="check_title"> Thông tin kiểm tra </string>
+    <string name="item_reportnum"> Mã bảng biểu：</string>
+    <string name="item_qrInfo"> Mã mố mã hai chiều：</string>
+    <string name="item_Section"> Công trạm：</string>
+    <string name="item_MFG"> Nơi chế tạo：</string>
+    <string name="getcheckstatus_failed"> Tạm thời không có thông tin trạng thái kiểm tra có thể tra cứu！ </string>
+    <!-- 報表配置 -->
+	<string name="reportname_hint"> Hãy nhập tên bảng biểu </string>
+    <string name="selectreport_config"> hãy chọn bảng biểu cần thiết lập</string>
+    <string name="getsbureport_failed"> Tạm thời không có bảng biểu để thiết lập！ </string>
+    <!-- 報表配置詳情 -->
+    <string name="select_all"> Chọn hết</string>
+    <string name="btn_saveconfig"> Lưu </string>
+    <string name="getsbucheckitem_failed"> Bảng biểu này vẫn chưa thiết lập！</string>
+    <string name="getsbu_failed"> Tạm thời không có SBU có thể chọn ！</string>
+    <string name="select_checkitem"> hãy chọn ít nhất 1 hạng mục ！</string>
+    <string name="select_sbu"> Hãy chọn SBU！</string>
+    <string name="reportconfig_success"> Thiết lập bảng biểu thành công！</string>
+    <string name="reportconfig_failed"> Bảng biểu thiết lập thất bại</string>
+    <string name="selectsbu_title"> Hãy chọn SBU </string>
+    <!-- 參數管理 -->
+    <string name="audit_message"> Thông tin ký duyệt</string>
+    <string name="skuno_hint"> Hãy nhập loại hàng</string>
+    <string name="update_time"> Thời gian sửa chữa：</string>
+    <string name="getparaminfo_failed"> Tạm thời không có thông tin tham khảo！ </string>
+    <!-- 參數詳情 -->
+	<string name="paramdetail_title"> Tham số chi tiết </string>
+    <string name="switch_side"> Thay đổi mặt</string>
+    <string name="param_bu">BU</string>
+    <string name="param_floorname"> Tầng lầu</string>
+    <string name="param_linename"> Chuyền </string>
+    <string name="param_skuno"> hàng</string>
+    <string name="param_side"> Mặt</string>
+    <string name="param_lasteditdate"> Thời gian sửa chữa</string>
+    <string name="param_createby"> Người thay đổi</string>
+    <string name="param_remark"> Ghi chú</string>
+    <string name="param_problemdesc"> Miêu tả vấn đề </string>
+    <string name="btn_update"> Sửa chữa </string>
+    <string name="btn_delete"> Xóa</string>
+    <string name="btn_submitparam"> Gửi đi</string>
+    <string name="getparamdetail_failed"> Tạm thời không có thông tin tham số chi tiết！</string>
+    <!-- 參數修改 -->
+	<string name="paramupdate_title"> Sửa chữa tham số </string>
+    <string name="paramdelete_title"> Xóa tham số</string>
+    <string name="getcheckmaster_failed"> Tạm thời không có thông tin chủ quản cấp trên, hãy thử vào lại</string>
+    <string name="param_empty"> Bạn vẫn còn tham số chưa điền, hãy điền hoàn chỉnh tham số！</string>
+    <string name="submitparam_title"> Hãy chọn người ký duyệt</string>
+    <string name="updateparam_success"> Gửi đi sửa chữa tham số thành công </string>
+    <string name="updateparam_failed"> gửi sửa tham số thất bại,hãy thử lại</string>
+    <string name="deleteparam_success"> gửi xóa tham số thành công!hãy đợi chủ quản ký duyệt</string>
+    <string name="deleteparam_failed"> gửi xóa tham số  thất bại, hãy làm lại </string>
+    <string name="select_checkby"> Hãy chọn người ký duyệt ！</string>
+    <string name="param_notexist"> Thông tin chi tiết tham số này không tồn tại ！</string>
+
+    <!-- 輸入提示 -->
+	<string name="param_skuno_hint"> Hãy nhập loại hàng </string>
+    <string name="param_hint"> Hãy nhập tham số, phạm vi dùng +/- hoặc ~</string>
+    <string name="param_modelname_hint"> Hãy nhập tên chương trình</string>
+    <string name="param_remark_hint"> Hãy nhập chú thích</string>
+    <string name="param_problemdesc_hint"> Hãy nhập miêu tả vấn đề</string>
+    <!-- 印刷機 -->
+	<string name="param_scraperpressure">Áp lực dao cạo </string>
+    <string name="param_printspeed"> Tốc độ máy in </string>
+    <string name="param_separationspeed"> Tốc độ tách khuôn</string>
+    <string name="param_separationdistance">Khoảng cách tách khuôn</string>
+    <string name="param_screencleanrate">Tỉ lệ tự đông lau khuôn </string>
+    <string name="param_squeegeelength">Độ dài dao cạo</string>
+    <!-- 回焊爐 -->
+	<string name="param_zone1">ZONE1</string>
+    <string name="param_zone2">ZONE2</string>
+    <string name="param_zone3">ZONE3</string>
+    <string name="param_zone4">ZONE4</string>
+    <string name="param_zone5">ZONE5</string>
+    <string name="param_zone6">ZONE6</string>
+    <string name="param_zone7">ZONE7</string>
+    <string name="param_zone8">ZONE8</string>
+    <string name="param_zone9">ZONE9</string>
+    <string name="param_zone10">ZONE10</string>
+    <string name="param_zone11">ZONE11</string>
+    <string name="param_zone12">ZONE12</string>
+    <string name="param_zone13">ZONE13</string>
+    <string name="param_speed">SPEED</string>
+    <string name="param_fanspeed">FanSpeed</string>
+    <string name="param_shuntvalue">ShuntValue</string>
+    <!-- 波峰焊 -->
+    <string name="param_modelname"> Tên chương trình</string>
+    <string name="param_productname"> tên hàng</string>
+    <string name="param_BOTPreheatI">BOTPreheatI</string>
+    <string name="param_BOTPreheatII">BOTPreheatII</string>
+    <string name="param_BOTPreheatIII">BOTPreheatIII</string>
+    <string name="param_BOTPreheatIV">BOTPreheatIV</string>
+    <string name="param_TOPPreheatI">TOPPreheatI</string>
+    <string name="param_TOPPreheatII">TOPPreheatII</string>
+    <string name="param_TOPPreheatIII">TOPPreheatIII</string>
+    <string name="param_TOPPreheatIV">TOPPreheatIV</string>
+    <string name="param_ChainSpeedAfter">ChainSpeedAfter</string>
+    <string name="param_ChainSpeed">ChainSpeed</string>
+    <string name="param_TinTemperature">TinTemperature</string>
+    <string name="param_TinBathHeight">TinBathHeight</string>
+    <string name="param_TurbulentWave">TurbulentWave</string>
+    <string name="param_AdvectionWave">AdvectionWave</string>
+    <string name="param_TinBarType">TinBarType</string>
+    <string name="param_FluxType">FluxType</string>
+    <string name="param_FluxFlow">FluxFlow</string>
+    <string name="param_NozzleAirPressure">NozzleAirPressure</string>
+    <string name="param_TotalAirPressure">TotalAirPressure</string>
+    <string name="param_TankAirPressure">TankAirPressure</string>
+    <string name="param_FluxProportion">FluxProportion</string>
+    <!-- 簽核消息 -->
+ 	<string name="paramaudit_title">Thông tin ký duyệt</string>
+    <string name="submit_param">tham số tôi gửi đi </string>
+    <string name="review_param">tham số tôi ký</string>
+    <string name="update">thay đổi </string>
+    <string name="delete">xóa </string>
+    <string name="add"> thêm </string>
+    <string name="check_date"> thời gian ký ：</string>
+    <string name="create_date"> thời gian kiến tạo：</string>
+    <string name="audit_by"> ký duyệt：</string>
+    <string name="submit_by"> gửi đi：</string>
+    <string name="check_pass"> thông qua</string>
+    <string name="check_failed"> trả về </string>
+    <string name="check_review"> đợi ký</string>
+    <string name="getsubmitinfo_failed"> Tạm thời không có thông tin gửi tham số！</string>
+    <string name="getcheckinfo_failed"> tạm thời không có thông tin ký duyệt tham số！</string>
+    <!-- 簽核詳細消息 -->
+ 	<string name="paramauditdetail_title"> chi tiết tham số ký duyệt</string>
+    <string name="param_mfg"> khu chế tạo</string>
+    <string name="param_checkdate"> thời gian ký duyệt</string>
+    <string name="param_checkby"> Người ký</string>
+    <string name="param_updatetype"> loại hình sửa chữa</string>
+    <string name="param_checkstate"> trạng thái ký duyệt</string>
+    <string name="getauditinfo_failed"> tạm thời không có thông tin ký duyệt tham số chi tiết！</string>
+    <string name="paramaudit_tip"> nhắc nhở ký duyệt tham số</string>
+    <string name="paramaudit_passmsg"> bạn xác nhận muốn thông qua thông tin gửi đi tham số này không?</string>
+    <string name="paramaudit_failedmsg"> bạn xác nhận muốn trả về thông tin gửi đi tham số này không?</string>
+    <string name="auditfailed_noparaminfo">Ký duyệt thất bại, chưa lấy được thông tin tham số chi tiết ký duyệt,hãy vào lại hoặc kiểm tra trạng thái mạng </string>
+    <string name="audit_failed"> Ký duyệt thất bại, mời làm lại </string>
+    <string name="audit_success"> Ký duyệt thành công!</string>
+    <!-- 提前維護 -->
+ 	<string name="select_date"> Chọn ngày tháng </string>
+    <string name="select_time"> Chọn thời gian </string>
+    <string name="scanqr_check"> kiểm tra mã scan </string>
+    <string name="maintenance"> cài đặt </string>
+    <string name="selecttime_small"> Chọn thời gian bắt buộc lớn hơn thời gian trước đó！ </string>
+    <!-- 異常管理 -->
+ 	<string name="deal_exception"> Xử lý </string>
+    <string name="create_exception"> Sáng kiến </string>
+    <string name="dealstate_review"> Đợi xử lý </string>
+    <string name="dealstate_ok"> Xử lý hoàn thành </string>
+    <string name="dealstate_reject"> Trả về </string>
+    <string name="getexceptioninfo_failed"> Tạm thời không có thông tin bất thường ！</string>
+    <string name="exception_from">From：</string>
+    <string name="exception_to">To：</string>
+    <!-- 異常管理詳細信息 -->
+	<string name="ecdetail_title"> Nội dung chi tiết bất thường </string>
+    <string name="ec_mfgfloor"> Nơi chế tạo-tầng lầu </string>
+    <string name="ec_equipment"> Mã số thiết bị </string>
+    <string name="ec_reportname"> Tên bảng biểu </string>
+    <string name="ec_rno"> mã số kiểm tra </string>
+    <string name="ec_checkid"> Lịch sử chỉnh sửa</string>
+    <string name="ec_name"> Hạng mục kiểm tra </string>
+    <string name="ec_proname"> Hạng mục kiểm tra </string>
+    <string name="ec_fromuser"> Người kiểm tra </string>
+    <string name="ec_touser"> Người xử lý </string>
+    <string name="ec_content"> Nội dung bất thường </string>
+    <string name="ec_uploadpic"> Tải hình ảnh </string>
+    <string name="ec_committime"> Thời gian gửi đi </string>
+    <string name="ec_dealstate"> Trạng thái xử lý </string>
+    <string name="ec_backcontent"> Nội dung trả lời </string>
+    <string name="ec_completetime"> Thời gian xử lý </string>
+    <string name="ec_pass"> Thông qua </string>
+    <string name="ec_failed"> Trả về </string>
+    <string name="getexceptiondetail_failed">Tạm thời không có thông tin chi tiết bất thường ！</string>
+    <string name="ecpass_title"> thông qua bất thường </string>
+    <string name="ecreject_title"> Từ chối bất thường </string>
+    <string name="backcontent_hint"> Hãy nhập nội dung phản hồi </string>
+    <string name="btn_submitec">Gửi đi </string>
+    <string name="backcontent_empty"> Hãy nhập nội dung phản hồi ！</string>
+    <string name="submitdealstate_success"> Gửi kết quả xử lý thành công！ </string>
+    <string name="submitdealstate_failed"> Gửi kết quả xử lý thất bại, hãy làm lại </string>
+    <string name="rejectcontent_hint"> Hãy nhập nguyên nhân từ chối </string>
+    <string name="rejectcontent_empty"> Hãy nhập nguyên nhân từ chối ！</string>
+    <string name="loadingimg_failed"> Hình ảnh tải lên thất bại ！</string>
+    <!-- 後面添加的內容 -->
+	<!-- 登錄 -->
+	<string name="language">Ngôn ngữ </string>
+    <string name="vietnamese">Tiếng Việt </string>
+    <string name="selectlanguage_title">Chọn ngôn ngữ </string>
+    <!-- 修改密碼 -->
+ 	<string name="password_rule">Quy tắc mật khẩu ：</string>
+    <string name="password_rule_detail">Độ dài mật khẩu bắt buộc có 8-16 đơn vị, đồng thời có chữ cái viết hoa viết thường,số và ký tự đặc biệt </string>
+    <!-- 主頁 -->
+	<string name="function_notopen">Chức năng này tạm thời không mở！</string>
+
+    <!-- 報表點檢 -->
+    <string name="scaninfo_wrong">Quét thông tin không chính xác</string>
+    <string name="input_notpermission">Không cho phép nhập nội dung, làm ơn sau Mã nhập vào!</string>
+	<!-- 批量簽核 -->
+    <string name="auditbatch_title">Hàng loạt Ký hạt nhân</string>
+    <string name="check_user">Kiểm tra người.</string>
+    <string name="auditbatchpass_msg">Bạn có chắc muốn gộp qua đã lựa chọn kiểm tra đưa ra thông tin không?</string>
+    <string name="select_audititem">Xin hãy chọn một！</string>
+    <!-- 提前維護纖體 -->
+    <string name="select_way">選擇提前維護方式</string>
+    <string name="mt_inadvance_byline">提前維護纖體</string>
+    <string name="select_floor">選擇樓層</string>
+    <string name="getfloor_failed">沒有獲取到樓層信息，請先去創建二維碼！</string>
+    <string name="floor_notexist">樓層信息不存在！</string>
+    <string name="getline_failed">沒有獲取到纖體信息，請重試！</string>
+    <string name="select_shift">選擇維護的班別：</string>
+    <string name="select_mt_date">選擇維護時間</string>
+    <string name="mt_notpermission">不允許維護該日期的線體，請重新設置日期后重試！</string>
+    <string name="mt_success">維護成功！</string>
+    <string name="mt_failed">維護失敗，此纖體已被維護！</string>
+    <!-- 補點檢 -->
+    <string name="supplement_title">補點檢</string>
+    <string name="supplement_scanqr">掃碼進行補點檢</string>
+    <string name="selecttime_big">補點檢日期必須小於當前日期！</string>
+</resources>

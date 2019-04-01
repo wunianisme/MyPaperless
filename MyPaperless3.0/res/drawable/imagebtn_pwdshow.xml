@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--看密码  -->
+    <item android:state_pressed="true" android:drawable="@drawable/pwd_show"/>
+    <item android:state_pressed="false" android:drawable="@drawable/pwd_notshow"/>
+</selector>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- 用戶 賬號信息界面 -->
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/svContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp" >
+
+            <!-- 賬號 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_logonname" />
+
+                    <TextView
+                        android:id="@+id/tvLogonName"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 中文名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_chinesename" />
+
+                    <com.foxconn.paperless.ui.widget.ClearEditText
+                        android:id="@+id/etChineseName"
+                        style="@style/customer_edittext_style"
+                        android:hint="@string/account_chinesename"
+                        android:maxLength="7" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 英文名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_englishname" />
+
+                    <com.foxconn.paperless.ui.widget.ClearEditText
+                        android:id="@+id/etEnglishName"
+                        style="@style/customer_edittext_style"
+                        android:hint="@string/account_englishname"
+                        android:maxLength="20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 電話 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_ext" />
+
+                    <com.foxconn.paperless.ui.widget.ClearEditText
+                        android:id="@+id/etExt"
+                        style="@style/customer_edittext_style"
+                        android:digits="01234567890+"
+                        android:hint="@string/account_ext"
+                        android:maxLength="20" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 郵箱 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_email" />
+
+                    <com.foxconn.paperless.ui.widget.ClearEditText
+                        android:id="@+id/etEmail"
+                        style="@style/customer_edittext_style"
+                        android:hint="@string/account_email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 製造處 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_mfg" />
+
+                    <Spinner
+                        android:id="@+id/spMFG"
+                        style="@style/customer_spinner_style"
+                        android:entries="@array/MFG_array" />
+
+                    <ImageButton
+                        android:id="@+id/ibMFGDrop"
+                        style="@style/customer_spinner_dropdown_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- SBU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_SBU" />
+
+                    <Spinner
+                        android:id="@+id/spSBU"
+                        style="@style/customer_spinner_style"
+                        android:entries="@array/SBU_array" />
+
+                    <ImageButton
+                        android:id="@+id/ibSBUDrop"
+                        style="@style/customer_spinner_dropdown_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Team -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_team" />
+
+                    <Spinner
+                        android:id="@+id/spTeam"
+                        style="@style/customer_spinner_style"
+                        android:entries="@array/team_array" />
+
+                    <ImageButton
+                        android:id="@+id/ibTeamDrop"
+                        style="@style/customer_spinner_dropdown_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_section" />
+
+                    <Spinner
+                        android:id="@+id/spSection"
+                        style="@style/customer_spinner_style"
+                        android:entries="@array/section_array" />
+
+                    <ImageButton
+                        android:id="@+id/ibSectionDrop"
+                        style="@style/customer_spinner_dropdown_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 職務 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_job" />
+
+                    <TextView
+                        android:id="@+id/tvJob"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 用戶等級 -->
+
+            <LinearLayout
+                android:id="@+id/userLevelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_userlevel" />
+
+                    <TextView
+                        android:id="@+id/tvUserLevel"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 主管工號 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_master" />
+
+                    <TextView
+                        android:id="@+id/tvMaster"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- BU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_BU" />
+
+                    <TextView
+                        android:id="@+id/tvBU"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 廠區 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_site" />
+
+                    <TextView
+                        android:id="@+id/tvSite"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 編輯人 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style"/>
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_lasteditby" />
+
+                    <TextView
+                        android:id="@+id/tvLastEditby"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 編輯時間 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="vertical" >
+
+                <View style="@style/divide_line_style" />
+
+                <LinearLayout style="@style/account_linearlayout_style" >
+
+                    <TextView
+                        style="@style/item_textview_style"
+                        android:text="@string/account_lasteditdt" />
+
+                    <TextView
+                        android:id="@+id/tvLastEditdt"
+                        style="@style/datainfo_textview_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/divide_line_style" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

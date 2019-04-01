@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">MyPaperless3.0</string>
+    <string name="action_settings">Settings</string>
+    <!-- dialog -->
+    <string name="system_tip">Warm reminder</string>
+    <string name="savepath">保存路徑：</string>
+    <string name="btn_ok">確定</string>
+    <string name="btn_no">取消</string>
+    <string name="cancel_tip">退出提示</string>
+    <string name="cancel_message">您確定要退出當前頁面？</string>
+    <string name="connect_overtime">連接超時，請重試！</string>
+    
+    <!--APK版本更新  -->
+    <string name="APK_update">發現新版本</string>
+    <string name="download_apk">APK下載</string>
+    <string name="APK_update_content">更新內容：</string>
+    <string name="savedownload_success">保存下載信息成功！</string>
+    <string name="btn_updateAPK">更新</string>
+    
+    <!--登陆  -->
+    <string name="account_hint">LoginName</string>
+    <string name="pwd_hint">Password</string>
+    <string name="forget_pwd">Forget password?</string>
+    <string name="account_login">Login</string>
+    <string name="language_chinese">Chinese</string>
+    <string name="language_english">English</string>
+    <string name="logonname_empty">Please input logonName!</string>
+    <string name="password_empty">Please input password!</string>
+    <string name="login_success">Login success!</string>
+    <string name="logonname_notexist">此賬號不存在！</string>
+    <string name="pwd_error_nolock">密碼輸入錯誤！您還可以輸錯次數：</string>
+    <string name="pwd_error_islock">此賬號已被鎖定！三十分鐘后將自動解鎖</string>
+    <string name="error_locked">此賬號已被鎖定！</string>
+    <string name="logonname_password_error">LoginName or password error!</string>
+    <string name="connect_network_failed">Unable to connect to the server. Please check the network!</string>
+    <string name="network_exception">Network connection exception!\n</string>
+    <string name="loading">loading...</string>
+    <string name="pwd_regular">Please update you password\npassword rules:Length is 8-16 bits and must contain case letters, special characters and numbers </string>
+    <string name="updatepwd_now">Now update it</string>
+    <string name="copyright">©CNSBG SFC一課 AppTeam</string>
+    <!-- 网络服务 -->
+    <string name="connectedto">Connected to</string>
+    <string name="mobile_network">Mobile network</string>
+    <string name="disconnect">No network connection</string>
+    
+    <!--修改密码  -->
+    <string name="updatepwd_title">Update password</string>
+    <string name="oldpwd_hint">Please input old password</string>
+    <string name="newpwd_hint">Please input new password</string>
+    <string name="confirmpwd_hint">Please input new password to check</string>
+    <string name="updatepwd">Update</string>
+    <string name="oldpwd_empty">Please input old password!</string>
+    <string name="newpwd_empty">Please input new password!</string>
+    <string name="confirmpwd_empty">Please input check password! </string>
+    <string name="oldpwd_error">The old password entered incorrectly. Please re-enter it!</string>
+    <string name="confirmpwd_identical">The check password is inconsistent with the new password!</string>
+    <string name="newpwd_illegal">The new password you set does not conform to the rules. Please re-enter it!</string>
+    <string name="updatepwd_failed">Update failed.Please re-enter it!</string>
+    <string name="updatepwd_success">Update success!</string>
+    
+     <!--忘記密碼  -->
+    <string name="forgetpwd_title">Forget password</string>
+    <string name="loginname_hint">請輸入要找回密碼的賬號</string>
+    <string name="email_hint">請輸入郵箱地址</string>
+    <string name="getemail">獲取郵箱地址</string>
+    <string name="findpwd">找回密碼</string>
+    <string name="loginname_notexist">此賬號不存在！</string>
+    <string name="email_empty">郵箱地址不允許為空！</string>
+    <string name="findpwd_success">找回密碼成功！密碼已發送至您的郵箱</string>
+    <string name="sendemail_failed">找回密碼失敗！請確認郵箱地址是否填寫正確</string>
+    <string name="findpwd_failed">找回密碼失敗！請確認賬號是否填寫正確</string>
+    
+    <!--主頁  -->
+    <string name="home_title">首页</string>
+    <string name="checkmanage_title">審核</string>
+    <string name="account_title">賬戶</string>
+    <string name="pressagain_exit">再按一次退出APP</string>
+    
+    <!--賬戶  -->
+    <string name="eg_logonname">工號：</string>
+    <string name="eg_name">賬號名稱？</string>
+    <string name="employeeinfo">員工信息</string>
+    <string name="pwdupdate">修改密碼</string>
+    <string name="versionupdate">版本更新</string>
+    <string name="feedback">意見反饋</string>
+    <string name="contactus">聯繫我們</string>
+    <string name="logoff">切換賬號</string>
+    <string name="gallery">圖庫</string>
+    <string name="camera">拍照</string>
+    <string name="cancel">取消</string>
+    <string name="picture_notexist">照片不存在！</string>
+    <string name="uploadheadportrait_success">頭像設置成功！</string>
+    <string name="uploadheadportrait_failed">頭像設置失敗！</string>
+    <string name="newversion">有新版本</string>
+    <string name="nonewversion">已經是最新版本！</string>
+    <string name="versioncode">版本號：</string>
+    <string name="versionname">版本名稱：</string>
+    <string name="contactus_message">
+        SFC一課APPTeam\n
+                       電話：187781\n
+                       郵箱：supporter.team@mail.\nfoxconn.com               
+   	</string>
+    
+    <string name="logoff_message">是否退出當前賬號？</string>
+    
+    <!--圖片編輯  -->
+    <string name="turnleft">左轉</string>
+    <string name="turnright">右轉</string>
+    <string name="saveimage">保存</string>
+    <string name="canceledit">取消</string>
+    
+    <!-- 賬號信息 -->
+    <string name="accountinfo_title">賬號信息</string>
+    <string name="accountinfo_save">保存</string>
+    <string name="account_logonname">工號</string>
+    <string name="account_chinesename">中文名</string>
+    <string name="account_englishname">英文名</string>
+    <string name="account_job">職務</string>
+    <string name="account_ext">電話</string>
+    <string name="account_email">郵箱</string>
+    <string name="account_userlevel">用戶等級</string>
+    <string name="account_master">主管工號</string>
+    <string name="account_team">Team</string>
+    <string name="account_section">工站</string>
+    <string name="account_SBU">SBU</string>
+    <string name="account_mfg">製造處</string>
+    <string name="account_BU">BU</string>
+    <string name="account_site">廠區</string>
+    <string name="account_lasteditby">編輯人</string>
+    <string name="account_lasteditdt">編輯時間</string>
+    <string name="chinesename_empty">中文名不允許為空！</string>
+    <string name="englishname_empty">英文名不允許為空！</string>
+    <string name="ext_empty">電話不允許為空！</string>
+    <string name="mail_empty">郵箱不允許為空！</string>
+    <string name="chinesename_illegal">中文名請輸入中文！</string>
+    <string name="englishname_illegal">英文名請輸入英文！</string>
+    <string name="ext_lengthnotenough">電話長度至少是5位！</string>
+    <string name="email_illegal">郵箱地址不合法！</string>
+    <string name="saveaccountinfo_success">保存賬號信息成功！</string>
+    <string name="saveaccountinfo_failed">保存賬號信息失敗！請重試</string>
+    
+    <!--員工信息  -->
+    <string name="addemployee">添加</string>
+    <string name="searchemployee_hint">請輸入查詢用戶的工號或姓名</string>
+    <string name="column_logonname">工號</string>
+    <string name="column_name">姓名</string>
+    <string name="column_job">職務</string>
+    <string name="column_master">主管</string>
+    <string name="totalrownum">記錄條數：</string>
+    <string name="getemployeeinfo_failed">獲取員工信息失敗！請重試</string>
+    
+    <!--員工詳細信息  -->
+    <string name="employeedetail_title">員工詳細信息</string>
+    <string name="userlevel_instruction">等級說明：0-普通員工，1-組長和線長，2-課長以上級別</string>
+    <!--添加員工  -->
+    <string name="addemployee_title">添加員工</string>
+    <string name="addemployee_submit">提交</string>
+    <string name="logonname_hint">請輸入工號，不少於5個字符</string>
+    <string name="chinesename_hint">請輸入中文名，不超過7個字符</string>
+    <string name="englishname_hint">請輸入英文名，不超過20個字符</string>
+    <string name="ext_hint">請輸入電話號碼，不少於5個數字</string>
+    <string name="emails_hint">請輸入郵箱地址，不超過50個字符</string>
+    <string name="userlevel_hint">請輸入主管工號，至少5個字符</string>
+    <string name="logonnames_empty">工號不允許為空！</string>
+    <string name="master_empty">主管工號不允許為空！</string>
+    <string name="logonname_lengthnotenough">工號長度至少是5位！</string>
+    <string name="master_lengthnotenough">主管工號長度至少是5位！</string>
+    <string name="addemployee_success">添加員工賬號成功！\n初始密碼為：</string>
+    <string name="employee_exist">該員工賬號已存在！請確認</string>
+    <string name="addemployee_failed">添加員工賬號失敗！請重試</string>
+    <!-- 意見反饋 -->
+    <string name="publishfeedback_hint">我也來發表意見</string>
+    <string name="publish">發表</string>
+    <string name="getfeedback_failed">獲取歷史意見反饋記錄失敗！請重試</string>
+    <string name="publish_empty">發表內容不允許為空！</string>
+    <string name="publish_success">發表意見成功！</string>
+    <string name="publish_failed">發表意見失敗！請重試</string>
+    
+    <!--點檢  -->
+    <string name="scan_tip">請將取景框對準二維碼進行掃描</string>
+    <string name="scanqr">掃碼點檢</string>
+    <string name="bureport_title">已导入報表</string>
+    <string name="bu_notfound">該廠區還未配置BU</string>
+    
+    <!-- 各BU已导入報表 -->
+    <string name="allreport">已導入報表</string>
+    <string name="reportnum">報表編號</string>
+    <string name="reportname">報表名稱</string>
+    <string name="getreport_failed">該BU暫無報表</string>
+    <string name="totalreport_count">配置報表總數：</string>
+    
+    <!-- 掃碼點檢 -->
+    <string name="qrcode_notexist">系統中不存在這個二維碼！</string>
+    <string name="check_notpermission">您暫無權限點檢！</string>
+    <string name="report_checked">此二維碼該時段已被點檢！點檢人：</string>
+    <string name="select_checkreport">選擇點檢報表</string>
+    
+    <!-- 報表點檢-->
+    <string name="check_item">點檢項目</string>
+    <string name="wo_hint">請輸入工單或SN</string>
+    <string name="rno">編號：</string>
+    <string name="rno2">點檢編號</string><!-- 不輸工單顯示編號 -->
+    <string name="floorname">樓層：</string><!-- 不輸工單顯示編號 -->
+    <string name="linename">線別：</string>
+    <string name="skuno">機種：</string>
+    <string name="skuversion">版本：</string>
+    <string name="checkid">節次：</string>
+    <string name="qty">批量：</string>
+    <string name="side">面別：</string>
+    <string name="checkremark">備註：</string>
+    <string name="deviation">deviation：</string>
+    <string name="deviation_hint">請輸入deviation</string>
+    <string name="side_hint">請輸入面別</string>
+    <string name="checktype">類型：</string>
+    <string name="reportchecktype">點檢類型：</string>
+    <string name="maintencetime">選擇時間</string>
+    <string name="getparams_success">已帶出標準參數</string>
+    <!--checkFlag  -->
+    <string name="inputkeyword_hint">請輸入關鍵字</string>
+    <string name="inputtrsn_hint">請輸入TR_SN</string>
+    <string name="inputsn_hint">請輸入SN</string>
+    <string name="checkcontent_hint">請輸入點檢內容</string>
+    <string name="inputok_hint">請輸入OK</string>
+    <!-- 錯誤信息 -->
+    <string name="sn_error">輸入SN有誤！</string>
+    <string name="wo_error">輸入工單有誤！</string>
+    <string name="report_notconfig">該報表還未配置，請聯繫課長進行配置！</string>
+    <string name="getshift_failed">獲取班別和節次失敗！</string>
+    <string name="side_notsupport">暫無面別數據！</string>
+    <string name="params_notsupport">ME未提供參數！</string>
+    <!--點檢提示信息  -->
+    <string name="check_tip">點檢提示</string>
+    <string name="submitfailed_notconfig">該報表還未配置，請配置后提交！</string>
+    <string name="submitfailed_inputwo">請輸入工單！</string>
+    <string name="submitfailed_wowrong">請輸入正確的工單！</string>
+    <string name="submitfailed_notgetparam">未獲取到標準參數，不允許提交！</string>
+    <string name="submitfailed_deviationempty">請輸入deviation！</string>
+    <string name="submitfailed_sideempty">請輸入面別！</string>
+    <string name="deviationinput_title">輸入deviation</string>
+    <string name="sideinput_title">輸入side</string>
+    <string name="submitfailed_contentempty">項參數實際值不能為空，請輸入</string>
+    <string name="submitfailed_notinrange">項參數實際值不在標準參數範圍內，請修正</string>
+    <string name="submitfailed_notmatch">項參數實際值與標準參數不匹配，請修正</string>
+    <string name="submitfailed_notnumber">項參數實際值不是數字或格式有誤，請修正</string>
+    <string name="submitfailed_nottakephoto">項配置了拍照，請拍照</string>
+    <string name="check_success">點檢成功！</string>
+    <string name="input_onlyok">只能輸入OK！</string>
+    <string name="submitcheck_title">點檢提交</string>
+    <string name="btn_submitcheck">提交</string>
+    <string name="submitcheck_success">點檢成功！</string>
+    <string name="submitcheck_exist">該時段已被點檢！</string>
+    <string name="submitcheck_failed">提交點檢信息失敗！請檢查網絡狀況或稍後重試</string>
+    <string name="openline">開線</string>
+    <string name="changeline">換線</string>
+    <!--提交異常 選擇簽核人  -->
+    <string name="master_hint">請輸入簽核人的工號或姓名</string>
+    <string name="clickitem_selectcheckby">點擊以下條目選擇簽核人</string>
+    <string name="selected_checkby">已選擇的簽核人（默認為上級主管）</string>
+    <string name="submitexception_title">提交異常</string>
+    <string name="btn_nextstep">下一步</string>
+   	<string name="checkby_add">添加</string>
+   	<string name="checkby_delete">刪除</string>
+   	<string name="getcheckby_failed">暫無可選擇的簽核人！</string>
+   	<string name="checkby_notselect">請選擇簽核人！</string>
+   	<!--提交異常  拍照 輸入內容-->
+   	<string name="exception_hint">請輸入異常信息</string>
+   	<string name="check_exception">產線點檢出現異常</string>
+    <string name="btn_submitexception">提交異常</string>
+    <string name="exceptioninfo_empty">請輸入異常信息后再提交！</string>
+    <string name="photonum_toomore">最多只允許上傳三張圖片！</string>
+    <string name="submitexception_success">提交異常信息成功！</string>
+    <string name="submitexception_failed">提交異常信息失敗！請重試</string>
+    <string name="submitphoto_success">上傳異常圖片成功！</string>
+    
+    <!--功能管理  -->
+    <string name="functionmanage_title">功能管理</string>
+    <string name="audit_search">點檢-簽核查詢</string>
+    <string name="check_search">點檢狀況查詢</string>
+    <string name="check_edit">點檢修改</string>
+    <string name="maintenance_inadvance">提前維護</string>
+    <string name="report_config">報表配置</string>
+    <string name="parameter_manage">參數管理</string>
+    <string name="exception_manage">異常管理</string>
+    <string name="reportconfig_nopermission">您暫無權限配置報表，請聯繫課長級別以上主管進行配置！</string>
+    <string name="maintenance_nopermission">您暫無權限提前維護！</string>
+     <!-- 簽核查詢 -->
+    <string name="record_query">歷史記錄</string>
+    <string name="review_list">待簽核列表</string>
+    <string name="audited_list">已簽核列表</string>
+    <string name="anti_sign_list">拒簽列表</string>
+    <string name="where_hint">請輸入查詢條件</string>
+    <string name="please_enter_list">請輸入報表名</string>
+    <string name="select_report">選擇報表</string>
+    <string name="getmfgreport_failed">暫無可查詢的報表！</string>
+    <string name="getaudit_failed">暫無報表簽核信息！</string>
+    <string name="reportname_empty">請輸入報表名或暫無該報表信息！</string>
+    <string name="queryrow">查詢記錄條數：</string>
+   <!-- 簽核基本信息 -->
+   <string name="baseinfo_title">簽核基本信息</string>
+   	<string name="seqno">序列</string>
+    <string name="check_number">點檢編號</string>
+    <string name="andit_status">簽核狀態</string>
+    <string name="creation_time">創建時間：</string>
+    <string name="by">BY:</string>
+    <string name="audit_ok">已簽核</string>
+    <string name="audit_wait">待簽核</string>
+    <string name="audit_reject">拒簽</string>
+    <string name="record_node">節次</string>
+    <string name="auditor">簽核人</string>
+    <string name="state">狀態</string>
+    <string name="report_name">報表名稱：</string>
+    <string name="report_num">報表編號：</string>
+    <string name="business_office">事業處：</string>
+    <string name="floor">樓層：</string>
+    <string name="work_order">工單：</string>
+    <string name="line_body">線體(設備)：</string>
+    <string name="check_skuno">工單機種：</string>
+    <string name="work_ordernumber">工單數量：</string>
+    <string name="deviation_ecn">deviation\n(ecn)：</string>
+    <string name="face">面別：</string>
+    <string name="Reasons_fortagging">備註理由：</string>
+    <string name="check_marking">點檢備註：</string>
+    <string name="getcheck_information">詳細點檢信息>>></string>
+    <string name="getbaseinfo_failed">暫無簽核基本信息！</string>
+    <!--詳細點檢信息  -->
+    <string name="checkresult_title">詳細點檢信息</string>
+     <string name="proid">子項ID</string>
+    <string name="inspection_project">點檢項目</string>
+    <string name="check_frequency">點檢頻率</string>
+    <string name="icar_no">Icar NO：</string>
+    <string name="check_result">點檢結果</string>
+    <string name="tobe_audited">待簽核</string>
+    <string name="pass">通過</string>
+    <string name="audit_person">簽核人：</string>
+    <string name="check_content">點檢子項：</string>
+    <string name="check_status">點檢狀況：</string>
+    <string name="checkresult_normal">正常</string>
+    <string name="checkresult_exception">異常（請進入異常管理查看）</string>
+    <string name="check_record_content">點檢記錄內容：</string>
+    <string name="upload_pic">上傳圖片：</string>
+    <string name="btn_pass">通過</string>
+    <string name="btn_reject">駁回</string>
+    <string name="checkdata_null">暫無點檢數據</string>
+    <string name="check_reportname">點檢報表：</string>
+    <string name="check_Id">節次：</string>
+    <string name="check_reason">原因：</string>
+    <string name="reject_remark">拒簽原因：</string>
+    <string name="getrejectremark_failed">獲取拒簽原因失敗！</string>
+    <string name="audit_tip">簽核提示</string>
+    <string name="auditpass_msg">您確定要通過該點檢提交信息嗎？</string>
+    <string name="auditreject_hint">請輸入駁回原因</string>
+    <string name="remark_empty">請輸入駁回原因！</string>
+    <string name="submitaudit_success">簽核成功！</string>
+    <string name="submitaudit_failed">簽核失敗！請重試</string>
+    <string name="zoomimage_tip">溫馨提示：兩只手指按住圖片拖拽可放大局部位置</string>
+    <!-- 點檢狀況查詢 -->
+    <string name="floorNO_search">序號/詳細信息</string>
+    <string name="sitLine_search">線別/責任人</string>
+    <string name="prompting_search">溫馨提示：已點檢的背景為白色，未點檢的為紅色</string>
+    <string name="select_search">查詢</string>
+    <string name="date">日期</string>
+    <string name="check_title">點檢信息</string>
+    <string name="item_reportnum">報表編號：</string>
+    <string name="item_qrInfo">二維碼編號：</string>
+    <string name="item_Section">工站：</string>
+    <string name="item_MFG">製造處：</string>
+    <string name="getcheckstatus_failed">暫無可查詢的點檢狀態信息！</string>
+    <!--報表配置  -->
+    <string name="reportname_hint">請輸入報表名</string>
+    <string name="selectreport_config">請選擇要配置的報表</string>
+    <string name="getsbureport_failed">暫無可配置的報表！</string>
+     <!--報表配置詳情  -->
+    <string name="select_all">全選</string>
+    <string name="btn_saveconfig">保存</string>
+    <string name="getsbucheckitem_failed">此報表還未配置！</string>
+    <string name="getsbu_failed">暫無可選擇的SBU！</string>
+    <string name="select_checkitem">請選擇至少一個點檢子項！</string>
+    <string name="select_sbu">請選擇SBU！</string>
+    <string name="reportconfig_success">報表配置成功！</string>
+    <string name="reportconfig_failed">報表配置失敗！請重試</string>
+    <string name="selectsbu_title">請選擇SBU</string>
+    <!-- 參數管理 -->
+    <string name="audit_message">簽核消息</string>
+    <string name="skuno_hint">請輸入機種</string>
+    <string name="update_time">修改時間：</string>
+    <string name="getparaminfo_failed">暫無參數信息！</string>
+    <!-- 參數詳情 -->
+    <string name="paramdetail_title">參數詳情</string>
+    <string name="switch_side">切換面別</string>
+    <string name="param_bu">BU</string>
+    <string name="param_floorname">樓層</string>
+    <string name="param_linename">線別</string>
+    <string name="param_skuno">機種</string>
+    <string name="param_side">面別</string>
+    <string name="param_lasteditdate">修改時間</string>
+    <string name="param_createby">修改人</string>
+    
+    <string name="param_remark">備註</string>
+    <string name="param_problemdesc">問題描述</string>
+    <string name="btn_update">修改</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_submitparam">提交</string>
+    <string name="getparamdetail_failed">暫無詳細參數信息！</string>
+    <!-- 參數修改 -->
+    <string name="paramupdate_title">參數修改</string>
+    <string name="paramdelete_title">參數刪除</string>
+    <string name="getcheckmaster_failed">暫無上級主管信息！請嘗試重新進入</string>
+    <string name="param_empty">您還有參數未填寫，請先將參數填寫完整！</string>
+    <string name="submitparam_title">請選擇簽核人</string>
+    <string name="updateparam_success">提交修改參數成功！請等待主管簽核</string>
+    <string name="updateparam_failed">提交修改參數失敗！請重試</string>
+    <string name="deleteparam_success">提交刪除參數成功！請等待主管簽核</string>
+    <string name="deleteparam_failed">提交刪除參數失敗！請重試</string>
+    <string name="select_checkby">請選擇簽核人！</string>
+    <string name="param_notexist">該參數詳細信息不存在！</string>
+    
+    <!--輸入提示  -->
+    <string name="param_skuno_hint">請輸入機種</string>
+    <string name="param_hint">請輸入參數，範圍用+/-或~</string>
+    <string name="param_modelname_hint">請輸入程式名</string>
+    <string name="param_remark_hint">請輸入備註</string>
+    <string name="param_problemdesc_hint">請輸入問題描述</string>
+     <!-- 印刷機 -->
+    <string name="param_scraperpressure">刮刀壓力</string>
+    <string name="param_printspeed">印刷速度</string>
+    <string name="param_separationspeed">脫模速度</string>
+    <string name="param_separationdistance">脫模距離</string>
+    <string name="param_screencleanrate">自動擦網頻率</string>
+    <string name="param_squeegeelength">刮刀長度</string>
+    <!-- 回焊爐 -->
+    <string name="param_zone1">ZONE1</string>
+    <string name="param_zone2">ZONE2</string>
+    <string name="param_zone3">ZONE3</string>
+    <string name="param_zone4">ZONE4</string>
+    <string name="param_zone5">ZONE5</string>
+    <string name="param_zone6">ZONE6</string>
+    <string name="param_zone7">ZONE7</string>
+    <string name="param_zone8">ZONE8</string>
+    <string name="param_zone9">ZONE9</string>
+    <string name="param_zone10">ZONE10</string>
+    <string name="param_zone11">ZONE11</string>
+    <string name="param_zone12">ZONE12</string>
+    <string name="param_zone13">ZONE13</string>
+    <string name="param_speed">SPEED</string>
+    <string name="param_fanspeed">FanSpeed</string>
+    <string name="param_shuntvalue">ShuntValue</string>
+    <!--波峰焊  -->
+    <string name="param_modelname">程式名</string> 
+    <string name="param_productname">機種名</string> 
+    <string name="param_BOTPreheatI">BOTPreheatI</string> 
+    <string name="param_BOTPreheatII">BOTPreheatII</string> 
+    <string name="param_BOTPreheatIII">BOTPreheatIII</string> 
+    <string name="param_BOTPreheatIV">BOTPreheatIV</string> 
+    <string name="param_TOPPreheatI">TOPPreheatI</string> 
+    <string name="param_TOPPreheatII">TOPPreheatII</string> 
+    <string name="param_TOPPreheatIII">TOPPreheatIII</string> 
+    <string name="param_TOPPreheatIV">TOPPreheatIV</string> 
+    <string name="param_ChainSpeedAfter">ChainSpeedAfter</string> 
+    <string name="param_ChainSpeed">ChainSpeed</string> 
+    <string name="param_TinTemperature">TinTemperature</string> 
+    <string name="param_TinBathHeight">TinBathHeight</string> 
+    <string name="param_TurbulentWave">TurbulentWave</string> 
+    <string name="param_AdvectionWave">AdvectionWave</string> 
+    <string name="param_TinBarType">TinBarType</string> 
+    <string name="param_FluxType">FluxType</string> 
+    <string name="param_FluxFlow">FluxFlow</string> 
+    <string name="param_NozzleAirPressure">NozzleAirPressure</string> 
+    <string name="param_TotalAirPressure">TotalAirPressure</string> 
+    <string name="param_TankAirPressure">TankAirPressure</string> 
+    <string name="param_FluxProportion">FluxProportion</string> 
+    <!-- 簽核消息 -->
+    <string name="paramaudit_title">簽核消息</string>
+    <string name="submit_param">我提交的參數</string>
+    <string name="review_param">我簽核的參數</string>
+    <string name="update">修改</string>
+    <string name="delete">刪除</string>
+    <string name="add">添加</string>
+    <string name="check_date">簽核時間：</string>
+    <string name="create_date">創建時間：</string>
+    <string name="audit_by">簽核：</string>
+    <string name="submit_by">提交：</string>
+    <string name="check_pass">通過</string>
+    <string name="check_failed">駁回</string>
+    <string name="check_review">待簽核</string>
+    <string name="getsubmitinfo_failed">暫無參數提交信息！</string>
+    <string name="getcheckinfo_failed">暫無參數簽核信息！</string>
+    <!-- 簽核詳細消息 -->
+    <string name="paramauditdetail_title">簽核參數詳情</string>
+    <string name="param_mfg">製造處</string>
+    <string name="param_checkdate">簽核時間</string>
+    <string name="param_checkby">簽核人</string>
+    <string name="param_updatetype">修改類型</string>
+    <string name="param_checkstate">簽核狀態</string>
+    <string name="getauditinfo_failed">暫無參數詳細簽核信息！</string>
+    <string name="paramaudit_tip">參數簽核提示</string>
+    <string name="paramaudit_passmsg">您確定要通過該參數提交信息嗎？</string>
+    <string name="paramaudit_failedmsg">您確定要駁回該參數提交信息嗎？</string>
+    <string name="auditfailed_noparaminfo">簽核失敗！未獲取到參數詳細簽核信息，請嘗試重新進入或檢查網絡狀態</string>
+    <string name="audit_failed">簽核失敗！請重試</string>
+    <string name="audit_success">簽核成功！</string>
+    <!-- 提前維護 -->
+    <string name="select_date">選擇日期</string>
+    <string name="select_time">選擇時間</string>
+    <string name="scanqr_check">掃碼點檢</string>
+    <string name="maintenance">維護</string>
+    <string name="selecttime_small">維護時間必須大於當前時間！</string>
+    <!-- 異常管理 -->
+    <string name="deal_exception">处理</string>
+    <string name="create_exception">创建</string>
+    <string name="dealstate_review">待處理</string>
+    <string name="dealstate_ok">處理完成</string>
+    <string name="dealstate_reject">駁回</string>
+    <string name="getexceptioninfo_failed">暫無異常信息！</string>
+    <string name="exception_from">From：</string>
+    <string name="exception_to">To：</string>
+   <!--異常管理詳細信息  -->
+    <string name="ecdetail_title">異常詳細信息</string>
+    <string name="ec_mfgfloor">製造處-樓層</string>
+    <string name="ec_equipment">設備編號</string>
+    <string name="ec_reportname">報表名</string>
+    <string name="ec_rno">點檢編號</string>
+    <string name="ec_checkid">節次</string>
+    <string name="ec_name">點檢項</string>
+    <string name="ec_proname">點檢子項</string>
+    <string name="ec_fromuser">點檢人</string>
+    <string name="ec_touser">處理人</string>
+    <string name="ec_content">異常內容</string>
+    <string name="ec_uploadpic">上傳圖片</string>
+    <string name="ec_committime">提交時間</string>
+    <string name="ec_dealstate">處理狀態</string>
+    <string name="ec_backcontent">回復內容</string>
+    <string name="ec_completetime">處理時間</string>
+    <string name="ec_pass">通過</string>
+    <string name="ec_failed">駁回</string>
+    <string name="getexceptiondetail_failed">暫無異常詳細信息！</string>
+    <string name="ecpass_title">通過異常</string>
+    <string name="ecreject_title">駁回異常</string>
+    <string name="backcontent_hint">請輸入回復內容</string>
+    <string name="btn_submitec">提交</string>
+    <string name="backcontent_empty">請輸入回復內容！</string>
+    <string name="submitdealstate_success">提交處理結果成功！</string>
+    <string name="submitdealstate_failed">提交處理結果失敗！請重試</string>
+    <string name="rejectcontent_hint">請輸入駁回原因</string>
+    <string name="rejectcontent_empty">請輸入駁回原因！</string>
+    <string name="loadingimg_failed">加載上傳圖片失敗！</string>
+    <!--後面添加的內容 -->
+    <!--登錄  -->
+    <string name="language">語言</string>
+    <string name="vietnamese">越南文</string>
+    <string name="selectlanguage_title">選擇語言</string>
+    <!-- 修改密碼 -->
+    <string name="password_rule">密碼規則：</string>
+    <string name="password_rule_detail">密碼長度必須為8-16位，並且含有大小寫字母、特殊字符和數字</string>
+    <!--主頁  -->
+    <string name="function_notopen">此功能暫不開放！</string>
+    <!--報表點檢  -->
+    <string name="scaninfo_wrong">掃描信息不正確</string>
+    <string name="input_notpermission">不允許手動輸入內容，請掃碼輸入！</string>
+    <!-- 批量簽核 -->
+    <string name="auditbatch_title">批量簽核</string>
+    <string name="check_user">點檢人</string>
+    <string name="auditbatchpass_msg">您確定要批量通過已選擇的點檢提交信息嗎？</string>
+    <string name="select_audititem">請至少選中一項！</string>
+    <!-- 提前維護纖體 -->
+    <string name="select_way">選擇提前維護方式</string>
+    <string name="mt_inadvance_byline">提前維護纖體</string>
+    <string name="select_floor">選擇樓層</string>
+    <string name="getfloor_failed">沒有獲取到樓層信息，請先去創建二維碼！</string>
+    <string name="floor_notexist">樓層信息不存在！</string>
+    <string name="getline_failed">沒有獲取到纖體信息，請重試！</string>
+    <string name="select_shift">選擇維護的班別：</string>
+    <string name="select_mt_date">選擇維護時間</string>
+    <string name="mt_notpermission">不允許維護該日期的線體，請重新設置日期后重試！</string>
+    <string name="mt_success">維護成功！</string>
+    <string name="mt_failed">維護失敗，此纖體已被維護！</string>
+    <!-- 補點檢 -->
+    <string name="supplement_title">補點檢</string>
+    <string name="supplement_scanqr">掃碼進行補點檢</string>
+    <string name="selecttime_big">補點檢日期必須小於當前日期！</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_login">#e7e7e7</color><!-- 登陆背景 色-->
+    <color name="green_light">#00FF00</color><!--按钮浅绿  -->
+    <color name="green">#57C202</color><!--按钮绿色  -->
+    <color name="white">#FFFFFF</color><!-- 白色 -->
+    <color name="gray">#666666</color><!--灰色  -->
+    <color name="gray_hint">#999999</color><!--提示文本灰色  -->
+    <color name="gray_line">#CACDD1</color><!--横线灰色  -->
+    <color name="blue_text">#0079FF</color><!--蓝色文本  -->
+    <color name="transparent">#00000000</color><!--透明  -->
+    <color name="scanview_bg">#88000000</color><!--掃碼界面背景（陰影）  -->
+    <color name="red">#FF0000</color><!-- 紅色 -->
+    <color name="dialog_text">#FF666666</color><!--對話框文本顏色  -->
+    <!-- 加载圈颜色 -->
+    <color name="loading_startcolor">#55c6c6c6</color>
+    <color name="loading_centercolor">#c6c6c6</color>
+    <color name="loading_endcolor">#EE57C202</color>
+    
+    
+</resources>

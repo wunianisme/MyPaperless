@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="factory_array">
+ <!-- 廠區 Khu vực xưởng -->
+        <item>Long Hoa</item>
+    </string-array>
+    <string-array name="language_array">
+ <!-- 語言Ngôn ngữ -->
+        <item>Tiếng Trung</item>
+        <item>Tiếng Anh</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string-array name="MFG_array">
+ <!-- 製造處Khu chế tạo -->
+        <item>MFGI</item>
+    </string-array>
+    <string-array name="SBU_array">
+ <!-- SBU -->
+        <item>UABU</item>
+    </string-array>
+    <string-array name="team_array">
+ <!-- Team -->
+        <item>PD</item>
+    </string-array>
+    <string-array name="section_array">
+ <!-- 工站Công trạm -->
+        <item>SMT</item>
+    </string-array>
+    <string-array name="job_array">
+ <!-- 職務  Chức vụ -->
+        <item>Nhân viên</item>
+        <item>帶班</item>
+        <item>Kỹ sư</item>
+        <item>Tổ trưởng</item>
+        <item>領班</item>
+        <item>Tuyến trưởng</item>
+        <item>Trưởng phòng</item>
+        <item>Chuyên lý</item>
+        <item>Giám đốc</item>
+        <item>Xưởng trưởng</item>
+        <item>Hiệp lý</item>
+        <item>Tổng giám đốc</item>
+    </string-array>
+    <string-array name="userlevel_array">
+ <!-- 用戶等級 Cấp bậc người sử dụng -->
+        <item>0</item>
+        <item>1</item>
+        <!-- <item>2</item> -->
+    </string-array>
+    <string-array name="checkRemark_array">
+ <!-- 備註標記（可直接提交，不需要輸入點檢內容）Ghi chú đánh dấu(có thể trực tiếp gửi đi, không cần thiết nhập nội dung kiểm tra -->
+        <item>N/A</item>
+        <item>Dừng chuyền</item>
+        <item>Bảo dưỡng</item>
+        <item>Thiết bị bất thường</item>
+        <item>Mở chuyền</item>
+        <item>Đổi chuyền</item>
+        <item>Chưa mở chuyền</item>
+        <item>Bao bì ngoài</item>
+    </string-array>
+    <string-array name="checkRemark2_array"><!-- 備註標記 （針對大部分報表）-->
+        <item>N/A</item>
+        <item>停線</item>
+        <item>保養</item>
+        <item>設備異常</item>
+        <item>未開線</item>
+        <item>外包</item>
+    </string-array> 
+    <string-array name="checkRemarkReason_array">
+ <!-- 原因Nguyên nhân -->
+        <item>N/A</item>
+        <item>Vấn đề tính an toàn</item>
+        <item> kiểm soát quy trình-> trong 20 vật phẩm mẫu phát hiện 5 cái tùy cơ thiếu sót hoặc 3 cái thiếu trùng lặp</item>
+        <item> Kiện sai</item>
+        <item> Chương trình của máy không chính xác</item>
+        <item>Khuôn không đúng</item>
+        <item> không có quy phạm thao tác hoặc khuôn khoomng thích ứng</item>
+        <item> sự cố máy móc hoặc bất thường</item>
+        <item> FAI không thể tiếp nhận</item>
+        <item> cháy bản</item>
+        <item> khách hàng yêu cầu, như cấp bách cho vào ECO </item>
+    </string-array>
+    <string-array name="checkType_array">
+ <!-- 類型Loại hình -->
+        <item> MODELMỗi ngày hoặc thay đổi model</item>
+        <item>Deviation</item>
+        <item>ECN</item>
+        <item> Hàng mới</item>
+    </string-array>
+    <string-array name="reportCheckType_array">
+ <!-- 點檢類型 Loại hình kiểm tra -->
+        <item> Kiểm tra bình thường</item>
+        <item> Cài đặt trước</item>
+    </string-array>
+    <string-array name="checkByTeam_array">
+ <!-- 選擇簽核人的Team Chọn nhóm người ký duyệt -->
+        <item>PD</item>
+        <item>SMT-PD</item>
+        <item>PTH-PD</item>
+        <item>SI-PD</item>
+        <item>TEST-PD</item>
+        <item>PE/QE/ME/Process</item>
+        <item>IPQC</item>
+        <item>RE</item>
+        <item>SE</item>
+        <item>IE</item>
+        <item>TE</item>
+        <item>WHS</item>
+    </string-array>
+
+    <!-- 簽核查詢 Tra cứu ký duyệt -->
+    <string-array name="queryType_array">
+        <item> RNO Dựa vào kiểm tra sinh thành RNO</item>
+        <item> Dựa vào lựa chọn thời gian</item>
+        <item> Dựa vào công lệnh</item>
+        <item> Dựa vào thể tầng lầu</item>
+        <item> Dựa vào loại hàng</item>
+    </string-array>
+    <!-- 點檢查詢 Tra cứu kiểm tra -->
+    <string-array name="yield_array">
+        <item> Ca làm việc</item>
+        <item> Kiểm tra hàng ngày</item>
+        <item> kiểm tra hàng tuần</item>
+        <item> kiểm tra hàng tháng</item>
+        <item> kiểm tra hàng quý</item>
+    </string-array>
+    <string-array name="shift_array">
+        <item></item>
+        <item> Ca ngày</item>
+        <item> Ca đêm</item>
+    </string-array>
+
+    <!-- 參數管理 Quản lý tham số -->
+    <string-array name="paramTable_array">
+        <item> bảng tham số máy in SMT</item>
+        <item> bảng tham số về lò hàn SMT</item>
+        <item> Bảng tham số lò hàn song PTH</item>
+    </string-array>
+    <string-array name="side_array">
+        <item>BOT</item>
+        <item>TOP</item>
+    </string-array>
+    <!-- 提前維護方式 -->
+  <string-array name="mtWay_array">
+      <item>樓層纖體維護</item>
+      <item>二維碼編號維護</item>
+  </string-array>
+  <string-array name="mtWay2_array"><!-- 增加補點檢，只對userlevel=3開放 -->
+      <item>樓層纖體維護</item>
+      <item>二維碼編號維護</item>
+      <item>補點檢</item>
+  </string-array>
+  <!--提前維護班別  -->
+  <string-array name="mtShift_array">
+      <item>整天</item>
+      <item>白班</item>
+      <item>晚班</item>
+  </string-array>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <!-- 自定義選擇簽核人dialog佈局 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:background="@color/green"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16" />
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_margin="5dp" >
+
+                <com.foxconn.paperless.ui.widget.ClearEditText
+                    android:id="@+id/etMaster"
+                    style="@style/customer_edittext_border_style"
+                    android:layout_width="0dp"
+                     android:layout_height="40dp"
+                    android:layout_weight="2.5"
+                    android:drawableRight="@drawable/ic_delete"
+                    android:textSize="@dimen/size_16"
+                    android:hint="@string/master_hint"
+                    android:maxLength="16" />
+
+                <Spinner
+                    android:id="@+id/spTeam"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:entries="@array/checkByTeam_array" />
+            </LinearLayout>
+            <!-- 選擇簽核人 -->
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_14"
+                    android:text="@string/clickitem_selectcheckby"/>
+                <ListView 
+                    android:id="@+id/lvMaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/gray_line"
+                    android:dividerHeight="0.2dp">
+                </ListView>
+            </LinearLayout>
+            <!--已選擇的簽核人名單  -->
+             <LinearLayout 
+                android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_14"
+                    android:text="@string/selected_checkby"/>
+                <ListView 
+                    android:id="@+id/lvCheckBy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/gray_line"
+                    android:dividerHeight="0.2dp">
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 按鈕 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnNO"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_noborder_white"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_18"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_noborder"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_18"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

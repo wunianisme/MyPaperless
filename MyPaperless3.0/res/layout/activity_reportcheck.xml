@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+
+    <include layout="@layout/layout_topinfo_checkpdinput" />
+    <!-- CHECKPD INPUT /IPQC -->
+
+    <include layout="@layout/layout_topinfo_checknoinput" />
+    <!-- CHECK NOINPUT -->
+
+
+    <!-- <include layout="@layout/layout_topinfo_checkipqc" /> -->
+    <!-- CHECK IPQC -->
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_item"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/gray" />
+            <!-- 帶出標準參數提示 -->
+
+            <TextView
+                android:id="@+id/tvCheckTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/getparams_success"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" 
+                android:visibility="gone"/>
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ListView
+            android:id="@+id/lvCheckItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/white">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

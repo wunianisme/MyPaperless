@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!--點檢查詢  -->
+    <include layout="@layout/layout_title" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1.25"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <!-- 日期 -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textSize="@dimen/size_14" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etSitTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:focusable="false"
+                android:clickable="true"
+                android:textSize="@dimen/size_14" />
+            <!-- 点检周期类别 -->
+
+            <Spinner
+                android:id="@+id/spTallyCycle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:entries="@array/yield_array"
+                android:textSize="@dimen/size_14" >
+            </Spinner>
+            <!-- 白、夜 班别 -->
+
+            <Spinner
+                android:id="@+id/spClass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:entries="@array/shift_array"
+                android:textSize="@dimen/size_14" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <!-- 樓層 -->
+
+            <Spinner
+                android:id="@+id/spFloor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.75"
+                android:textSize="@dimen/size_12" >
+            </Spinner>
+            <!-- 線别 -->
+
+            <Spinner
+                android:id="@+id/spSitLine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.25"
+                android:textSize="@dimen/size_12" >
+            </Spinner>
+
+            <!-- 查詢 -->
+            <Button
+                android:id="@+id/btSelect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/select_search"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="0.5"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <!-- 序號/詳細信息 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/floorNO_search" />
+        <!-- 點檢頻率 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/check_frequency" />
+        <!-- 線別/責任人 -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/sitLine_search" />
+    </LinearLayout>
+
+    <!-- 點檢狀態信息 -->
+
+    <ListView
+        android:id="@+id/lvSearchList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/white"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:text="@string/prompting_search"
+        android:textColor="@color/gray_hint" />
+
+</LinearLayout>

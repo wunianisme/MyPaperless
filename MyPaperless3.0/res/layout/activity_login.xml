@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical" >
+
+    <!-- 登陆界面 -->
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/paperless_qrcode" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <!-- android:ems="10"表示EditText内最多只显示12个字符，超出不显示 -->
+                <!-- android:singleLine="true"表示不能全部显示时，后面用“…”来表示 -->
+
+                <com.foxconn.paperless.ui.widget.ClearEditText
+                    android:id="@+id/etLoginName"
+                    style="@style/customer_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/account_hint"
+                    android:maxLength="16"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/common_size" >
+                    <requestFocus />
+                </com.foxconn.paperless.ui.widget.ClearEditText>
+
+                <ImageButton
+                    android:id="@+id/ibMoreLoginName"
+                    style="@style/customer_spinner_dropdown_style"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <!-- 横线 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <com.foxconn.paperless.ui.widget.ClearEditText
+                    android:id="@+id/etPassword"
+                    style="@style/customer_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/pwd_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:paddingLeft="15dp"
+                    android:textSize="@dimen/common_size" />
+
+                <ImageButton
+                    android:id="@+id/ibShowPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/imagebtn_pwdshow" />
+            </LinearLayout>
+            <!-- 横线 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/spFactory"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:entries="@array/factory_array"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:spinnerMode="dialog" />
+
+                <ImageButton
+                    android:id="@+id/ibDropdown"
+                    style="@style/customer_spinner_dropdown_style" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3" />
+
+            <!-- <TextView
+                android:id="@+id/tvChinese"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text="@string/language_chinese"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/size_16" /> -->
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="right|center"
+                android:text="@string/language"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/customer_greenbtn_style"
+        android:layout_marginTop="15dp"
+        android:text="@string/account_login" />
+
+    <TextView
+        android:id="@+id/tvForgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/forget_pwd"
+        android:textColor="@color/blue_text"
+        android:textSize="@dimen/size_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/copyright"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/size_16"/>
+        
+   	</LinearLayout>
+
+</LinearLayout>

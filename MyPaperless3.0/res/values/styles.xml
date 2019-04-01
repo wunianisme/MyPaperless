@@ -1,0 +1,136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!--自定义progress样式，用于加载进度框样式  -->
+    <style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+	  <item name="android:backgroundDimEnabled">false</item>
+  	  <item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+	<!--分割線樣式  -->
+    <style name="divide_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:background">@color/gray_line</item>
+    </style>
+    <!-- 自定義綠色按鈕樣式 -->
+    <style name="customer_greenbtn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/btn_login</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/btn_size</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+    <!--修改頭像菜單動畫樣式  -->
+    <style name="choosepic_dialog_animstyle">
+        <item name="android:windowEnterAnimation">@anim/choosepicdialog_in</item>
+        <item name="android:windowExitAnimation">@anim/choosepicdialog_out</item>
+    </style>
+   
+    <!--自定義透明對話框樣式  -->
+    <style name="Theme_Light_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- 以下樣式參照activity_account.xml -->
+    <!--activity_account頁面的內層linearlayout樣式  -->
+    <style name="account_linearlayout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    
+    <!--條目文本樣式（深灰色）  -->
+    <style name="item_textview_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+    <!--條目文本樣式（深灰色）參數添加  -->
+    <style name="item_textview_PTHWS_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/size_14</item>
+    </style>
+    <!--顯示數據信息的文本樣式  -->
+    <style name="datainfo_textview_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+	
+	<!--自定義EditText樣式（無背景） -->
+	<style name="customer_edittext_style">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">44dp</item>
+	    <item name="android:layout_weight">3</item>
+	    <item name="android:background">@null</item>
+	    <item name="android:drawableRight">@drawable/ic_delete</item>
+	    <item name="android:paddingRight">15dp</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textColorHint">@color/gray_hint</item>
+	    <item name="android:textSize">@dimen/size_16</item>
+	</style>
+	<!-- 自定義Spinner樣式（無背景） -->
+	<style name="customer_spinner_style">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:layout_weight">3</item>
+	    <item name="android:background">@null</item>
+	    <item name="android:textSize">@dimen/size_16</item>
+	</style>
+	<!-- 自定義Spinner下拉圖標樣式 -->
+	<style name="customer_spinner_dropdown_style">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:layout_marginRight">15dp</item>
+	    <item name="android:background">@drawable/arrow_down</item>
+	</style>
+	<!-- 報表點檢專用樣式 -->
+	<!-- 自定義EditText(無聚焦、帶邊框、白色背景) -->
+	<style name="customer_edittext_border_style">
+	    <item name="android:layout_height">28dp</item>
+	    <item name="android:background">@drawable/edittext_border</item>
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:textSize">@dimen/size_14</item>
+	</style>
+	
+	<!-- 功能管理 頂部菜單-->
+	<style name="check_navi_radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@drawable/menu_item_selecter</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+</resources>

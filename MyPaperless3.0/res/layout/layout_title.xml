@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/green" 
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green" >
+        
+        <TextView
+            android:id="@+id/tvLeftTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/size_20" />
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:drawableLeft="@drawable/textview_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_20" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18"
+            android:visibility="invisible" />
+        <!--小紅點  -->
+        <TextView
+            android:id="@+id/tvPoint"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+           android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/tvRight"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/textview_redpoint"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:padding="1dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_10" />
+        
+        <ImageView 
+            android:id="@+id/ivSubmit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_submit"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            />    
+     </RelativeLayout>
+</LinearLayout>

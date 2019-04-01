@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- 批量簽核頁面 -->
+
+    <include layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="10" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_login" >
+
+            <LinearLayout
+                android:id="@+id/itemLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/seqno"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="@string/check_number"
+                    android:textSize="@dimen/size_16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/check_user"
+                    android:textSize="@dimen/size_16" />
+            </LinearLayout>
+
+            <View 
+                android:id="@+id/topLine"
+        		android:layout_height="0.5dp"
+        		android:layout_below="@id/itemLayout"
+        		style="@style/divide_line_style"/>
+
+            <ListView
+                android:id="@+id/lvQueryItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topLine"
+                android:layout_gravity="center"
+                android:divider="@color/gray_line" >
+            </ListView>
+        </RelativeLayout>
+    </FrameLayout>
+	<View 
+        android:layout_height="0.5dp"
+        style="@style/divide_line_style"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <CheckBox
+    	    android:id="@+id/cbSelectAll"
+    	    android:layout_width="0dp"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:checked="false"
+    	    android:text="@string/select_all"
+    	    android:textSize="@dimen/size_16" />
+        <Button 
+            android:id="@+id/btnPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_noborder"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_18"
+            android:text="@string/btn_pass"/>
+        
+    </LinearLayout>
+</LinearLayout>

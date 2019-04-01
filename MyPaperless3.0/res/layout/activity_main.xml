@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 主頁 -->
+
+    <include layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@color/bg_login" >
+
+        <ScrollView
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+        </ScrollView>
+    </FrameLayout>
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray_line" />
+    
+    <RadioGroup 
+        android:id="@+id/rgBottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <RadioButton 
+            android:id="@+id/rbCheckReport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobtn_ic_check"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/checkreport_title"
+            android:textColor="@drawable/radiobtn_textcolor"
+            android:textSize="@dimen/size_12"/>
+        <RadioButton 
+            android:id="@+id/rbCheckManage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobtn_ic_manage"
+            android:gravity="center"
+            android:text="@string/checkmanage_title"
+            android:textColor="@drawable/radiobtn_textcolor"
+            android:textSize="@dimen/size_12"
+            android:visibility="invisible"/>
+        <RadioButton 
+            android:id="@+id/rbAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/radiobtn_ic_account"
+            android:gravity="center"
+            android:text="@string/account_title"
+            android:textColor="@drawable/radiobtn_textcolor"
+            android:textSize="@dimen/size_12"/>
+    </RadioGroup>
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bg_login"
+        android:layout_weight="1.2" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_line" />
+
+            <RadioGroup
+                android:id="@+id/rgBottomBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rbHomeReport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/radiobtn_ic_home"
+                    android:gravity="center"
+                    android:text="@string/home_title"
+                    android:textColor="@drawable/radiobtn_textcolor"
+                    android:textSize="@dimen/size_12" />
+
+                <RadioButton
+                    android:id="@+id/rbCheckManage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/checkmanage_title"
+                    android:textColor="@drawable/radiobtn_textcolor"
+                    android:textSize="@dimen/size_12"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/rbAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/radiobtn_ic_account"
+                    android:gravity="center"
+                    android:text="@string/account_title"
+                    android:textColor="@drawable/radiobtn_textcolor"
+                    android:textSize="@dimen/size_12" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:gravity="center">
+            
+            <ImageView 
+                android:id="@+id/ivScanqr"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:src="@drawable/ic_scanqr"/>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14"
+                android:gravity="center"
+                android:text="@string/scanqr"/>
+            
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+         <TextView 
+                android:id="@+id/tvRowNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_12"
+                android:paddingLeft="15dp"
+                android:visibility="gone"
+                android:text="@string/queryrow"
+                android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvSequence"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvRNO"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="20151228SMTFL3S1D "
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvAnditStatus"
+                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="審核完畢"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvNull1"
+                android:layout_height="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/creation_time"
+                    android:textSize="@dimen/size_14"/>
+
+                <TextView
+                    android:id="@+id/tvCreateDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="2015-12-28"
+                    android:textSize="@dimen/size_14"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="@string/by"
+                    android:textSize="@dimen/size_14"/>
+
+                <TextView
+                    android:id="@+id/tvBy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:text="張喜"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvNull2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.35" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2.65"
+                android:background="@color/green" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

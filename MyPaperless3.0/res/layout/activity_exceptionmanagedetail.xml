@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+    <!-- 異常詳細信息界面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/proid"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/ec_reportname"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/ec_equipment"
+            android:textSize="@dimen/size_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="9"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/svContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvProId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/blue_text" />
+
+                    <TextView
+                        android:id="@+id/tvReportName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="NSDI電動起子點檢表"
+                        android:textSize="@dimen/size_14" />
+
+                    <TextView
+                        android:id="@+id/tvEquipment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:text="WSTG-QZ-41"
+                        android:textSize="@dimen/size_14" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 點檢項 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_name"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvCheckName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="扭力值(1bf-in或Kgf-cm)"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 點檢子項 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_proname"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvCheckProName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="根據實際分板情況調節上下片間隙,測量間隙并填寫實際數據.(單位:mm)"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 點檢編號 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_rno"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvRNO"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="20161208052434307MFGVIN"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 製造廠 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_mfgfloor"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvMFGFloor"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="MFGVI"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 節次 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_checkid"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvCheckId"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="0"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 點檢人/簽核人 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvUserNameStr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_fromuser"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="胡志國"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 異常內容 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="產線點檢出現異常"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 上傳照片 -->
+
+                <LinearLayout
+                    android:id="@+id/picLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/upload_pic"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <LinearLayout
+                        android:id="@+id/imgLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        
+                          <ImageView
+                            android:id="@+id/ivPic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center|left" />
+                          <ImageView
+                            android:id="@+id/ivPic2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center|left" />
+                          <ImageView
+                            android:id="@+id/ivPic3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center|left" />                        
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 提交時間 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_committime"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvCommitTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text="2016/12/08 05:24:34.613"
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 處理狀態 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_dealstate"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvDealState"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 回復內容 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_backcontent"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvBackContent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+                <!-- 處理時間 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="@string/ec_completetime"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12" />
+
+                    <TextView
+                        android:id="@+id/tvCompleteTime"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center|left"
+                        android:text=""
+                        android:textSize="@dimen/size_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_noborder"
+            android:text="@string/btn_pass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_noborder_red"
+            android:text="@string/btn_reject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

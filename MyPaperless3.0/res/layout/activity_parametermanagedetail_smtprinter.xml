@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SMTPrinterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- SMT印刷機參數表 -->
+    <!-- 刮刀壓力 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_scraperpressure" />
+
+            <TextView
+                android:id="@+id/tvScraperPressure"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etScraperPressure"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~."
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 印刷速度 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_printspeed" />
+
+            <TextView
+                android:id="@+id/tvPrintSpeed"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etPrintSpeed"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~."
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 脫模速度 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_separationspeed" />
+
+            <TextView
+                android:id="@+id/tvSeparationSpeed"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etSeparationSpeed"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~."
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 脫模距離 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_separationdistance" />
+
+            <TextView
+                android:id="@+id/tvSeparationDistance"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etSeparationDistance"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~."
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 自動擦網頻率 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_screencleanrate" />
+
+            <TextView
+                android:id="@+id/tvScreenCleanRate"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etScreenCleanRate"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 刮刀長度 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <View style="@style/divide_line_style" />
+
+        <LinearLayout style="@style/account_linearlayout_style" >
+
+            <TextView
+                style="@style/item_textview_PTHWS_style"
+                android:text="@string/param_squeegeelength" />
+
+            <TextView
+                android:id="@+id/tvSqueegeeLength"
+                style="@style/datainfo_textview_style" />
+
+            <com.foxconn.paperless.ui.widget.ClearEditText
+                android:id="@+id/etSqueegeeLength"
+                style="@style/customer_edittext_style"
+                android:digits="1234567890+/-~.or"
+                android:hint="@string/param_hint"
+                android:maxLength="15"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

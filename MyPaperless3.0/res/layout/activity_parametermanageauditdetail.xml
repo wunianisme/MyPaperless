@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <!-- 參數簽核詳細信息頁面 -->
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/svContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 基本 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp" >
+                    <!--MFG -->
+
+                    <LinearLayout
+                        android:id="@+id/MFGLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_mfg" />
+
+                            <TextView
+                                android:id="@+id/tvMFG"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- SBU -->
+
+                    <LinearLayout
+                        android:id="@+id/BULayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_bu" />
+
+                            <TextView
+                                android:id="@+id/tvBU"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 樓層 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_floorname" />
+
+                            <TextView
+                                android:id="@+id/tvFloorName"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 線別 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_linename" />
+
+                            <TextView
+                                android:id="@+id/tvLineName"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 機種 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_skuno" />
+
+                            <TextView
+                                android:id="@+id/tvSkuNo"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 面別 -->
+
+                    <LinearLayout
+                        android:id="@+id/sideLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_side" />
+
+                            <TextView
+                                android:id="@+id/tvSide"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/activity_parametermanagedetail_smtprinter" />
+
+                <include layout="@layout/activity_parametermanagedetail_smtreflow" />
+
+                <include layout="@layout/activity_parametermanagedetail_pthws" />
+                <!-- 提交人、時間 -->
+
+                <LinearLayout
+                    android:id="@+id/checkLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 簽核時間 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_checkdate" />
+
+                            <TextView
+                                android:id="@+id/tvCheckDate"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 簽核人 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_checkby" />
+
+                            <TextView
+                                android:id="@+id/tvCheckBy"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/createLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <!-- 修改時間 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_lasteditdate" />
+
+                            <TextView
+                                android:id="@+id/tvCreateDate"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 修改人 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="vertical" >
+
+                        <View style="@style/divide_line_style" />
+
+                        <LinearLayout style="@style/account_linearlayout_style" >
+
+                            <TextView
+                                style="@style/item_textview_PTHWS_style"
+                                android:text="@string/param_createby" />
+
+                            <TextView
+                                android:id="@+id/tvCreateBy"
+                                style="@style/datainfo_textview_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 問題描述 -->
+
+                <LinearLayout
+                    android:id="@+id/problemDescLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <View style="@style/divide_line_style" />
+
+                    <LinearLayout style="@style/account_linearlayout_style" >
+
+                        <TextView
+                            style="@style/item_textview_PTHWS_style"
+                            android:text="@string/param_problemdesc" />
+
+                        <TextView
+                            android:id="@+id/tvProblemDesc"
+                            style="@style/datainfo_textview_style" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 修改類型 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <View style="@style/divide_line_style" />
+
+                    <LinearLayout style="@style/account_linearlayout_style" >
+
+                        <TextView
+                            style="@style/item_textview_PTHWS_style"
+                            android:text="@string/param_updatetype" />
+
+                        <TextView
+                            android:id="@+id/tvUpdateType"
+                            style="@style/datainfo_textview_style" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 簽核狀態 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical"
+                     >
+
+                    <View style="@style/divide_line_style" />
+
+                    <LinearLayout style="@style/account_linearlayout_style" >
+
+                        <TextView
+                            style="@style/item_textview_PTHWS_style"
+                            android:text="@string/param_checkstate" />
+
+                        <TextView
+                            android:id="@+id/tvCheckState"
+                            style="@style/datainfo_textview_style" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/divide_line_style" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View style="@style/divide_line_style" />
+    <!-- 通過駁回按鈕 -->
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btnPass"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/btn_noborder"
+            android:text="@string/check_pass"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnFailed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/btn_noborder_red"
+            android:text="@string/check_failed"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

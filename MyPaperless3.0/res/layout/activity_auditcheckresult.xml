@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title" />
+    <!-- 記錄查詢詳細點檢信息頁面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/proid"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/inspection_project"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="@string/check_frequency"
+            android:textSize="@dimen/size_14" />
+    </LinearLayout>
+
+    <View
+        style="@style/divide_line_style"
+        android:layout_height="0.5dp" />
+
+    <ListView
+        android:id="@+id/lvCheckResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" >
+    </ListView>
+    <!-- 無點檢內容時顯示此佈局 -->
+
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="9"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/checkdata_null"
+            android:textColor="@color/red"
+            android:textSize="@dimen/size_18" />
+        <!-- 報表名 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/check_reportname"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvReportName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="SMT印刷機參數表"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+        <!-- 節次 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/check_Id"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvCheckId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="0"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+        <!-- 原因 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="@string/check_reason"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvReason"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="停線-NULL"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/divide_line_style"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnPass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_noborder"
+                android:text="@string/btn_pass"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_noborder_red"
+                android:text="@string/btn_reject"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16"
+                android:visibility="visible" />
+            
+        </LinearLayout>
+
+        <!-- 顯示簽核狀態和簽核人姓名 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:orientation="horizontal" >
+	            
+                 <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/audit_person"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvCheckBy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center|left"
+                android:text="李光雲 "
+                android:textColor="@color/blue_text"
+                android:textSize="@dimen/size_14" />
+
+            <TextView
+                android:id="@+id/tvCheckStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="待簽核"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_14" />
+                
+            </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/remarkLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:visibility="gone"
+	            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingLeft="15dp"
+                android:text="@string/reject_remark"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_14" />
+            
+               <TextView
+                android:id="@+id/tvRemark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|left"
+                android:text="djjdj"
+                android:textColor="@color/red"
+                android:textSize="@dimen/size_14" />
+               
+           </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

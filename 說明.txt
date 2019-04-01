@@ -1,0 +1,35 @@
+paperless
+
+簽名密碼：paperless
+
+
+南寧服務器 10.120.101.188
+
+administrator/foxconn168!!
+
+越南服務器 10.224.81.103
+
+administrator/Foxconn168!!
+
+重慶服務器 10.129.4.77
+
+administrator/foxconn168!
+
+重慶服務器（MBD） 10.250.185.61
+
+administrator/Foxconn123
+
+台灣服務器：10.59.65.95
+
+apadmin/Foxconn123!@#
+
+webservice測試數據
+
+strDB:NETAPP
+
+WO:002310098931-1
+SN:021802015483
+
+
+
+人資密碼：Foxconn2222@@

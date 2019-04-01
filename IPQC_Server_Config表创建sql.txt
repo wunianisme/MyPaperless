@@ -1,0 +1,111 @@
+
+//無紙化3.0服務器配置表
+CREATE TABLE [dbo].[IPQC_Server_Config] (
+	[Site] varchar(10) NOT NULL, 
+	[ServerName] varchar(20) NOT NULL, 
+	[EnglishServerName] varchar(50) NOT NULL,
+	[Url] varchar(250) NOT NULL, 
+	[NameSpace] varchar(50), 
+	[MethodName] varchar(50), 
+	[Type] varchar(50) NOT NULL, 
+	[Enable] bit NOT NULL, 
+	[Editdt] datetime NOT NULL
+) ON [PRIMARY]
+GO
+
+//無紙化3.0下載信息表
+
+CREATE TABLE [dbo].[PAPERLESS3_DOWNLOAD_NUM] (
+	[DOWNLOAD_ID] int NOT NULL IDENTITY(1,1) PRIMARY KEY, 
+	[DEVICEID] varchar(50) NOT NULL, 
+	[PHONEBRAND] varchar(50) NOT NULL, 
+	[PHONEMODEL] varchar(50) NOT NULL, 
+	[VERCODE] int NOT NULL, 
+	[METRICS] varchar(50) NOT NULL, 
+	[SIMOPERATORNAME] varchar(50), 
+	[DOWNLOAD_DATE] datetime NOT NULL
+) ON [PRIMARY]
+GO
+//報表參數配置表
+CREATE TABLE [dbo].[IPQC_Param_Config] (
+	[ReportNum] varchar(40) NOT NULL, 
+	[ReportName] varchar(50) NOT NULL, 
+	[CheckName] varchar(50) NOT NULL, 
+	[CheckProName] varchar(500) NOT NULL, 
+	[ProId] varchar(10) NOT NULL, 
+	[type] varchar(20) NOT NULL, 
+	[ServerAddress] varchar(250) NOT NULL, 
+	[DBName] varchar(20), 
+	[UserName] varchar(20), 
+	[PassWord] varchar(20), 
+	[NameSpace] varchar(50), 
+	[MethodName] varchar(50), 
+	[Param] varchar(100), 
+	[ParamNum] int DEFAULT ((0)), 
+	[sql] varchar(2000), 
+	[describe] varchar(200), 
+	[MFG] varchar(20) DEFAULT ('ALL'), 
+	[DBType] varchar(20), 
+	[dotNet] int DEFAULT ((1))
+) ON [PRIMARY]
+GO
+//波峰焊參數簽核表
+CREATE TABLE [dbo].[IPQC_WS_Parameter_Check] (
+	[ParameterNum] varchar(60) DEFAULT ([gstpuser].[F_Paperless_WS_ParameterNum]()), 
+	[MFG_Name] varchar(20), 
+	[SBU] varchar(20), 
+	[Building] varchar(20), 
+	[Line] varchar(20), 
+	[ModelName] varchar(50), 
+	[ProductName] varchar(50), 
+	[BOTPreheatI] varchar(20), 
+	[BOTPreheatII] varchar(20), 
+	[BOTPreheatIII] varchar(20), 
+	[BOTPreheatIV] varchar(20), 
+	[TopPreheatI] varchar(20), 
+	[TopPreheatII] varchar(20), 
+	[TopPreheatIII] varchar(20), 
+	[TopPreheatIV] varchar(20), 
+	[ChainSpeedAfter] varchar(20), 
+	[ChainSpeed] varchar(20), 
+	[TinTemperature] varchar(20), 
+	[TinBathHeight] varchar(20), 
+	[TurbulentWave] varchar(20), 
+	[AdvectionWave] varchar(20), 
+	[TinBarType] varchar(30), 
+	[FluxType] varchar(40), 
+	[FluxFlow] varchar(40), 
+	[NozzleAirPressure] varchar(20), 
+	[TotalAirPressure] varchar(20), 
+	[TankAirPressure] varchar(20), 
+	[FluxProportion] varchar(20), 
+	[UpdateType] int, 
+	[ProblemDescription] varchar(500), 
+	[ResultVerification] varchar(10), 
+	[Create_by] varchar(20), 
+	[Create_Date] datetime DEFAULT (getdate()), 
+	[Check_State] int, 
+	[Check_By] varchar(20), 
+	[Check_Date] datetime
+) ON [PRIMARY]
+GO
+
+
+修改表：IPQCEuser   增加欄位
+
+[FailedLogonTime] datetime 上一次登錄時間
+[FailedLogonNum] int 登錄失敗次數
+
+SP：
+
+[dbo].[MyPaperless_CheckLogin_sp]  登錄校驗
+
+[dbo].[saveCheckInfo]   點檢信息提交SP
+
+[dbo].[auditQuery]      簽核記錄查詢SP  
+
+[gstpuser].[paramManage] 獲得參數管理部分數據的SP (此SP不能加dbo前綴，因為表是gstpuser中的)
+
+修改SP：[gstpuser].[Paperless_WSParameterSet_SP]
+
+

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:layout_margin="5dp"
+    android:layout_marginBottom="1dp"
+    android:id="@+id/checkNoInputLayout">
+
+    <!-- 點檢不輸工單  頂部信息頁面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/rno2"
+            android:textSize="@dimen/size_16"/>
+
+        <TextView
+            android:id="@+id/tvRNO2"
+            style="@style/customer_edittext_border_style"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="ddkk"/>
+        <ImageView
+            android:id="@+id/ivToggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_up" 
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reportInfoLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 樓層 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/floorname" />
+
+                <TextView
+                    android:id="@+id/tvFloorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+            <!-- 線別 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/linename" />
+
+                <TextView
+                    android:id="@+id/tvLineName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 提前維護時進行選擇備註 -->
+        <LinearLayout
+            android:id="@+id/checkRemarkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <!-- 備註 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/checkremark" />
+
+                <Spinner
+                    android:id="@+id/spCheckRemark2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                   	android:entries="@array/checkRemark_array"/>
+                <Spinner
+                    android:id="@+id/spCheckRemarkReason2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/checkRemarkReason_array" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

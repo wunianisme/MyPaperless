@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="factory_array"><!--廠區  -->
+        <item>龍華</item>
+    </string-array>
+    <string-array name="language_array"><!--語言  -->
+        <item>中文</item>
+        <item>英文</item>
+        <item>越南文</item> 
+    </string-array>
+    <string-array name="MFG_array"><!--  製造處-->
+        <item>MFGI</item>
+    </string-array>
+    <string-array name="SBU_array"><!--SBU  -->
+        <item>UABU</item>
+    </string-array>
+    <string-array name="team_array"><!--Team  -->
+        <item>PD</item>
+    </string-array>
+    <string-array name="section_array"><!--工站 -->
+        <item>SMT</item>
+    </string-array>
+    <string-array name="job_array"><!--職務  -->
+        <item>員工</item>
+        <item>帶班</item>
+        <item>工程師</item>
+        <item>組長</item>
+        <item>領班</item>
+        <item>線長</item>
+        <item>課長</item>
+        <item>專理</item>
+        <item>經理</item>
+        <item>處長</item>
+        <item>協理</item>
+        <item>總經理</item>
+    </string-array>
+    <string-array name="userlevel_array"><!--用戶等級  -->
+        <item>0</item>
+        <item>1</item>
+        <!-- <item>2</item> -->
+    </string-array>
+    <string-array name="checkRemark_array"><!-- 備註標記 （只針對FD3NMD219001ASMT開線&換線點檢表）-->
+        <item>N/A</item>
+        <item>停線</item>
+        <item>保養</item>
+        <item>設備異常</item>
+        <item>開線</item>
+        <item>換線</item>
+        <item>未開線</item>
+        <item>外包</item>
+    </string-array> 
+    <string-array name="checkRemark2_array"><!-- 備註標記 （針對大部分報表）-->
+        <item>N/A</item>
+        <item>停線</item>
+        <item>保養</item>
+        <item>設備異常</item>
+        <item>未開線</item>
+        <item>外包</item>
+    </string-array> 
+    <string-array name="checkRemarkReason_array"><!-- 原因 -->
+        <item>N/A</item>
+        <item>安全性問題</item>
+        <item>制程失控->在20個樣品中發現5個隨機缺陷或3個重复缺陷</item>
+        <item>錯件</item>
+        <item>機器程序不正确</item>
+        <item>治具不對</item>
+        <item>無操作規範或治具不適當</item>
+        <item>機器故障或異常</item>
+        <item>FAI不能接受</item>
+        <item>燒板</item>
+        <item>客戶需求﹐如緊急ECO導入</item>
+    </string-array>
+    <string-array name="checkType_array"><!--類型  -->
+        <item>每日或更換MODEL</item>
+        <item>Deviation</item>
+        <item>ECN</item>
+        <item>新機種</item>
+    </string-array> 
+    <string-array name="reportCheckType_array"><!--點檢類型  -->
+        <item>正常點檢</item>
+        <item>提前維護</item>
+    </string-array> 
+    
+    <string-array name="checkByTeam_array"><!-- 選擇簽核人的Team -->
+       	<item>PD</item>
+        <item>SMT-PD</item>
+        <item>PTH-PD</item>
+        <item>SI-PD</item>
+        <item>TEST-PD</item>
+        <item>PE/QE/ME/Process</item>
+        <item>IPQC</item>
+        <item>RE</item>
+        <item>SE</item>
+        <item>IE</item>
+        <item>TE</item>
+        <item>WHS</item>
+    </string-array>
+    
+    <!-- 簽核查詢 -->
+     <string-array name="queryType_array">
+    	<item>按點檢生成RNO</item>
+    	<item>按选择时间</item>
+    	<item>按工單</item>
+    	<item>按樓層線體</item>
+    	<item>按機種</item>
+    </string-array>
+    <!--點檢查詢  -->
+  	<string-array name="yield_array">
+      <item>班別</item>
+      <item>日點</item>
+      <item>周點</item>
+      <item>月點</item>
+      <item>季點</item>
+  </string-array>
+  <string-array name="shift_array">
+      <item></item>
+	  <item>白班</item>
+      <item>晚班</item>
+  </string-array>
+  
+  <!--參數管理  -->
+  <string-array name="paramTable_array">
+      <item>SMT印刷機參數表</item>
+      <item>SMT回焊爐參數表</item>
+      <item>PTH波峰焊參數表</item>
+  </string-array>
+  <string-array name="side_array">
+      <item>BOT</item>
+      <item>TOP</item>
+  </string-array>
+  <!-- 提前維護方式 -->
+  <string-array name="mtWay_array">
+      <item>樓層纖體維護</item>
+      <item>二維碼編號維護</item>
+  </string-array>
+  <string-array name="mtWay2_array"><!-- 增加補點檢，只對userlevel=3開放 -->
+      <item>樓層纖體維護</item>
+      <item>二維碼編號維護</item>
+      <item>補點檢</item>
+  </string-array>
+  <!--提前維護班別  -->
+  <string-array name="mtShift_array">
+      <item>整天</item>
+      <item>白班</item>
+      <item>晚班</item>
+  </string-array>
+</resources>

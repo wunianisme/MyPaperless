@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 賬戶頁面 -->
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <!-- 頭像 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.foxconn.paperless.ui.widget.CircleImageView
+                android:id="@+id/ivHead"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/default_headportrait" />
+        </LinearLayout>
+        <!-- 頭像信息 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+            <!-- 工號姓名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eg_name"
+                    android:textSize="@dimen/size_18" />
+
+                <TextView
+                    android:id="@+id/tvLogonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eg_logonname"
+                    android:textColor="@color/gray_hint"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- 人員信息 -->
+
+    <LinearLayout
+        android:id="@+id/employeeInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_employeeinfo" />
+
+        <TextView
+            style="@style/datainfo_textview_style"
+            android:text="@string/employeeinfo"
+            android:textSize="@dimen/size_18" />
+    </LinearLayout>
+    <!-- 分割線 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </LinearLayout>
+    <!-- 修改密碼 -->
+
+    <LinearLayout
+        android:id="@+id/pwdUpdateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_updatepwd" />
+
+        <TextView
+           	style="@style/datainfo_textview_style"
+            android:text="@string/pwdupdate"
+            android:textSize="@dimen/size_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <!-- 版本更新 -->
+
+    <LinearLayout
+        android:id="@+id/versionUpdateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_updateversion" />
+
+        <TextView
+            style="@style/datainfo_textview_style"
+            android:text="@string/versionupdate"
+            android:textSize="@dimen/size_18" />
+        <TextView
+            android:id="@+id/tvNewVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:text="@string/newversion"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/size_14" />
+        
+    </LinearLayout>
+
+    <!-- 分割線 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </LinearLayout>
+    <!-- 意見反饋 -->
+
+    <LinearLayout
+        android:id="@+id/feedbackLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_feedback" />
+
+        <TextView
+            style="@style/datainfo_textview_style"
+            android:text="@string/feedback"
+            android:textSize="@dimen/size_18" />
+    </LinearLayout>
+
+    <!-- 分割線 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <!-- 聯繫我們 -->
+
+    <LinearLayout
+        android:id="@+id/contactUsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/linearlayout_item_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_contactus" />
+
+        <TextView
+            style="@style/datainfo_textview_style"
+            android:text="@string/contactus"
+            android:textSize="@dimen/size_18" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <!-- 切換賬號 -->
+    <Button
+        android:id="@+id/btnLogoff"
+        style="@style/customer_greenbtn_style"
+        android:text="@string/logoff" />
+    
+</LinearLayout>
